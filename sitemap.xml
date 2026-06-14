@@ -1,73 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://carnationelite.com/</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/index.html</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/about.html</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/services.html</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/carsales.html</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/engine-diagnostics-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/brake-repair-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/roadside-assistance-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/used-car-sales-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/ac-repair-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/fleet-services-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/general-maintenance-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/blog/vehicle-inspection-dallas.html</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://carnationelite.com/contact.html</loc>
-<lastmod>2026-06-06T05:37:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+  <!-- Sitemap for carnationelite.com -->
+  <url>
+    <loc>https://carnationelite.com/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/about.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/services.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/contact.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/carsales.html</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/index.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/engine-diagnostics-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/brake-repair-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/ac-repair-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/roadside-assistance-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/used-car-sales-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/fleet-services-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/general-maintenance-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/oil-change-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/check-engine-light-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/transmission-service-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://carnationelite.com/blog/vehicle-inspection-dallas.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>
