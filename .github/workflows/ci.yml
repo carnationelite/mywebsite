@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - name: Run local link checker
@@ -50,7 +50,7 @@ jobs:
                       for href in parser.links:
                           if not href:
                               continue
-                          if href.startswith(('http://','https://','//','mailto:','tel:','data:','#')):
+                          if href.startswith(('http://','https://','//','mailto:','tel:','data:','#','javascript:')):
                               continue
                           href_clean=href.split('?',1)[0].split('#',1)[0]
                           if href_clean.startswith('/'):
@@ -79,7 +79,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
       - name: Install htmlhint
         run: npm install -g htmlhint
       - name: Run htmlhint
