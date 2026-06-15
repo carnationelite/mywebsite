@@ -161,14 +161,12 @@
             "sameAs": [
                 "https://www.facebook.com/carnationelite",
                 "https://www.instagram.com/carnation_elite/",
-                "https://www.linkedin.com/company/carnation-elite/",
-                "https://twitter.com/carnationelite",
                 "https://www.tiktok.com/@carnation.elite"
             ],
             "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "77",
+                "ratingValue": "4.9",
+                "reviewCount": "200",
                 "bestRating": "5"
             }
         },
@@ -185,34 +183,34 @@
                 },
                 {
                     "@type": "Question",
-                    "name": "Can I sell my car to CarNation Elite?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Absolutely! We provide fast, fair cash offers for used cars. We handle all paperwork and make the selling process quick and stress-free."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Are your used cars inspected?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes, all our used cars undergo thorough multi-point inspections by certified technicians to ensure quality and reliability."
-                    }
-                },
-                {
-                    "@type": "Question",
                     "name": "What areas do you serve?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "We proudly serve Dallas, TX and surrounding areas including North Dallas, Richardson, Plano, and Addison."
+                        "text": "We serve Dallas, Garland, Mesquite, Richardson, Plano, Irving, and surrounding DFW metro areas."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Do you offer fleet services for businesses?",
+                    "name": "Do you offer same-day auto repair in Dallas?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, we provide comprehensive fleet maintenance and repair services for Dallas businesses with quick turnarounds and same-day service options."
+                        "text": "Yes. Most repairs including brake jobs, AC recharges, and oil changes are completed same-day at CarNation Elite."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much does a car diagnostic cost in Dallas?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Engine diagnostics at CarNation Elite start from $89 for a full OBD-II computer scan. Results are provided same-day."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you work on luxury vehicles like BMW and Mercedes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Our ASE-certified technicians work on all makes and models including BMW, Mercedes, Porsche, Cadillac, and all domestic and foreign vehicles."
                     }
                 }
             ]
@@ -1026,6 +1024,20 @@
         <section class="counter-one">
             <div class="container">
                 <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="counter-one__single">
+                            <div class="counter-one__icon">
+                                <span class="icon-technician"></span>
+                            </div>
+                            <div class="counter-one__content">
+                                <div class="counter-one__count">
+                                    <h3 class="odometer" data-count="15">00</h3>
+                                    <span>+</span>
+                                </div>
+                                <p class="counter-one__count-text">Years of Experience</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInLeft" data-wow-delay="200ms">
                         <div class="counter-one__single">
                             <div class="counter-one__icon">
@@ -1040,20 +1052,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInRight" data-wow-delay="100ms">
-                        <div class="counter-one__single">
-                            <div class="counter-one__icon">
-                                <span class="icon-technician"></span>
-                            </div>
-                            <div class="counter-one__content">
-                                <div class="counter-one__count">
-                                    <h3 class="odometer" data-count="15">00</h3>
-                                    <span>+</span>
-                                </div>
-                                <p class="counter-one__count-text">Experience</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInRight" data-wow-delay="200ms">
                         <div class="counter-one__single">
                             <div class="counter-one__icon">
@@ -1061,10 +1059,10 @@
                             </div>
                             <div class="counter-one__content">
                                 <div class="counter-one__count">
-                                    <h3 class="odometer" data-count="98">00</h3>
-                                    <span>%</span>
+                                    <h3 class="counter-star" data-count="4.9">0</h3>
+                                    <span>★</span>
                                 </div>
-                                <p class="counter-one__count-text">Customer Satisfaction</p>
+                                <p class="counter-one__count-text">Star Google Rating</p>
                             </div>
                         </div>
                     </div>
@@ -1839,6 +1837,38 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/chatbot.js"></script>
 <script src="assets/js/smoothscroll.min.js"></script>
+<script>
+(function () {
+  var fired = false;
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting && !fired) {
+        fired = true;
+        // Integer counters via odometer
+        document.querySelectorAll('.odometer[data-count]').forEach(function (el) {
+          el.innerHTML = el.getAttribute('data-count');
+        });
+        // Decimal star counter (4.9)
+        document.querySelectorAll('.counter-star[data-count]').forEach(function (el) {
+          var target = parseFloat(el.getAttribute('data-count'));
+          var start = 0, duration = 2000, startTime = null;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            el.textContent = (start + (target - start) * progress).toFixed(1);
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = target.toFixed(1);
+          }
+          requestAnimationFrame(step);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  var section = document.querySelector('.counter-one');
+  if (section) observer.observe(section);
+})();
+</script>
 </body>
 
 </html>
