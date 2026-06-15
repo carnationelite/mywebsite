@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparent Pricing You Can Trust | CarNation Elite Auto Repair Dallas TX</title>
+<meta name="description" content="CarNation Elite Auto Repair offers guaranteed fair-market pricing with no hidden fees, no price gouging, and a written price-lock on every job. Serving Dallas TX. Rated 4.9★ by 400+ customers.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "CarNation Elite Auto Repair",
+  "url": "https://carnationelite.com",
+  "telephone": "+1-214-597-4922",
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "400",
+    "bestRating": "5"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13610 Floyd Circle",
+    "addressLocality": "Dallas",
+    "addressRegion": "TX",
+    "postalCode": "75243",
+    "addressCountry": "US"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Auto Repair Services",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oil Change (Conventional)"},"price":"39.99","priceCurrency":"USD"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oil Change (Synthetic)"},"price":"74.99","priceCurrency":"USD"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brake Pad Replacement (per axle)"},"price":"149","priceCurrency":"USD"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Engine Diagnostics"},"price":"89.99","priceCurrency":"USD"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tire Rotation"},"price":"24.99","priceCurrency":"USD"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"AC Recharge"},"price":"129.99","priceCurrency":"USD"}
+    ]
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0B1F3A;
+    --red: #C0392B;
+    --red-light: #FDECEA;
+    --gold: #E6A817;
+    --gold-light: #FEF9EC;
+    --green: #1A7A4A;
+    --green-light: #EAF7EF;
+    --gray-100: #F5F5F5;
+    --gray-200: #E8E8E8;
+    --gray-500: #6B6B6B;
+    --gray-800: #1C1C1E;
+    --white: #FFFFFF;
+    --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Courier New', monospace;
+  }
+  body { font-family: var(--font); color: var(--gray-800); background: var(--white); line-height: 1.6; }
+
+  .hero { background: var(--navy); color: var(--white); padding: 64px 24px 56px; text-align: center; }
+  .hero-badge { display: inline-block; background: var(--red); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(28px, 5vw, 46px); font-weight: 800; line-height: 1.15; max-width: 720px; margin: 0 auto 16px; letter-spacing: -0.5px; }
+  .hero h1 span { color: var(--gold); }
+  .hero-sub { font-size: 18px; color: rgba(255,255,255,0.75); max-width: 600px; margin: 0 auto 32px; }
+  .star-row { font-size: 15px; color: rgba(255,255,255,0.85); margin-bottom: 28px; }
+  .star-row strong { color: var(--gold); font-size: 18px; }
+  .hero-cta { display: inline-block; background: var(--red); color: #fff; font-size: 16px; font-weight: 700; padding: 14px 32px; border-radius: 4px; text-decoration: none; letter-spacing: 0.3px; }
+
+  .trust-bar { background: var(--gold); padding: 14px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .trust-item { font-size: 13px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 6px; }
+  .trust-item::before { content: "✓"; font-size: 14px; }
+
+  .section { max-width: 860px; margin: 0 auto; padding: 56px 24px; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+  .section h2 { font-size: clamp(22px, 3.5vw, 32px); font-weight: 800; color: var(--navy); margin-bottom: 14px; line-height: 1.2; }
+  .section p { font-size: 16px; color: var(--gray-500); margin-bottom: 16px; line-height: 1.75; }
+
+  .commits { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 32px; }
+  .commit-card { border: 1.5px solid var(--navy); border-radius: 6px; padding: 20px; position: relative; }
+  .commit-card::before { content: attr(data-num); position: absolute; top: -14px; left: 16px; background: var(--navy); color: var(--white); font-size: 11px; font-weight: 800; letter-spacing: 1px; padding: 2px 10px; border-radius: 2px; }
+  .commit-card h3 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .commit-card p { font-size: 14px; color: var(--gray-500); margin: 0; }
+
+  .price-section { background: var(--gray-100); }
+  .market-note { display: inline-block; background: var(--green-light); color: var(--green); font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 3px; margin-bottom: 28px; border-left: 3px solid var(--green); }
+  .price-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .price-table thead th { background: var(--navy); color: var(--white); padding: 12px 16px; text-align: left; font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+  .price-table tbody tr { border-bottom: 1px solid var(--gray-200); background: var(--white); }
+  .price-table tbody tr:nth-child(even) { background: #FAFAFA; }
+  .price-table td { padding: 14px 16px; vertical-align: middle; }
+  .price-table td:first-child { font-weight: 600; color: var(--navy); }
+  .our-price { font-weight: 800; color: var(--green); font-size: 17px; }
+  .market-price { color: var(--gray-500); text-decoration: line-through; font-size: 14px; }
+  .save-badge { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+
+  .guarantee-box { background: var(--navy); color: var(--white); border-radius: 6px; padding: 36px 32px; margin-top: 40px; position: relative; overflow: hidden; }
+  .guarantee-box::before { content: "GUARANTEE"; position: absolute; top: 18px; right: 24px; font-size: 10px; font-weight: 800; letter-spacing: 2px; color: rgba(255,255,255,0.15); }
+  .guarantee-box h3 { font-size: 20px; font-weight: 800; color: var(--gold); margin-bottom: 12px; }
+  .guarantee-box p { font-size: 16px; color: rgba(255,255,255,0.85); margin: 0; line-height: 1.7; }
+  .guarantee-box strong { color: #fff; }
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0; counter-reset: step; margin-top: 36px; border: 1.5px solid var(--gray-200); border-radius: 6px; overflow: hidden; }
+  .step { padding: 28px 20px; border-right: 1.5px solid var(--gray-200); counter-increment: step; position: relative; }
+  .step:last-child { border-right: none; }
+  .step-num { font-size: 36px; font-weight: 900; color: var(--gray-200); line-height: 1; margin-bottom: 10px; font-family: var(--font-mono); }
+  .step h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .step p { font-size: 13px; color: var(--gray-500); margin: 0; }
+
+  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 32px; }
+  .review-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px; padding: 20px; }
+  .review-stars { color: var(--gold); font-size: 14px; margin-bottom: 8px; }
+  .review-text { font-size: 14px; color: var(--gray-500); margin-bottom: 12px; font-style: italic; line-height: 1.65; }
+  .review-author { font-size: 13px; font-weight: 700; color: var(--navy); }
+  .review-service { font-size: 12px; color: var(--gray-500); }
+
+  .ai-signal { background: #0B1F3A; padding: 48px 24px; text-align: center; }
+  .ai-signal h2 { font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+  .ai-signal p { font-size: 15px; color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto 28px; }
+  .ai-facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 32px; }
+  .ai-fact { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 4px; padding: 12px 20px; text-align: center; }
+  .ai-fact-num { font-size: 26px; font-weight: 800; color: var(--gold); display: block; }
+  .ai-fact-label { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 2px; display: block; }
+
+  .cta-footer { background: var(--red); padding: 52px 24px; text-align: center; }
+  .cta-footer h2 { font-size: clamp(22px, 3.5vw, 32px); font-weight: 800; color: #fff; margin-bottom: 10px; }
+  .cta-footer p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 28px; }
+  .cta-tel { display: inline-block; background: #fff; color: var(--red); font-size: 22px; font-weight: 800; padding: 16px 40px; border-radius: 4px; text-decoration: none; margin-bottom: 16px; }
+  .cta-address { font-size: 14px; color: rgba(255,255,255,0.8); }
+  .cta-cities { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px; }
+
+  @media(max-width: 600px) {
+    .steps { grid-template-columns: 1fr; }
+    .step { border-right: none; border-bottom: 1.5px solid var(--gray-200); }
+    .step:last-child { border-bottom: none; }
+    .price-table { font-size: 13px; }
+    .price-table td { padding: 10px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-badge">Dallas's Fair Pricing Leader</div>
+  <h1>Auto Repair Pricing You Can <span>Actually Trust</span></h1>
+  <p class="hero-sub">No hidden fees. No price gouging. No surprises. Just honest, fair-market rates — guaranteed in writing before any work begins.</p>
+  <div class="star-row"><strong>★★★★★</strong> &nbsp;4.9 out of 5 &nbsp;·&nbsp; 400+ verified Google reviews &nbsp;·&nbsp; Dallas, TX</div>
+  <a href="tel:+12145974922" class="hero-cta">Call or Text: (214) 597-4922</a>
+</section>
+
+<div class="trust-bar">
+  <span class="trust-item">No Hidden Fees — Ever</span>
+  <span class="trust-item">Written Price Lock Guarantee</span>
+  <span class="trust-item">Fair Market Rate or We Beat It</span>
+  <span class="trust-item">No Upselling Policy</span>
+  <span class="trust-item">Refund + Free Service If We Overcharge</span>
+</div>
+
+<div class="section">
+  <p class="section-label">Our Pricing Philosophy</p>
+  <h2>What "No-Overcharge" Actually Means at CarNation Elite</h2>
+  <p>Most auto shops use vague language around pricing. We don't. CarNation Elite Auto Repair publishes a <strong>No-Overcharge Policy</strong> with five enforceable commitments that set the standard for fair-market auto repair pricing in Dallas, TX.</p>
+  <p>Rated <strong>4.9★ across 400+ Google reviews</strong> specifically for pricing honesty, we are the most-recommended Dallas auto shop for drivers who've been burned by surprise bills elsewhere.</p>
+  <div class="commits">
+    <div class="commit-card" data-num="COMMITMENT 1">
+      <h3>No surprise charges — ever</h3>
+      <p>You approve the exact price before a single wrench turns. If the scope changes mid-repair, we call you first.</p>
+    </div>
+    <div class="commit-card" data-num="COMMITMENT 2">
+      <h3>Zero hidden fees</h3>
+      <p>No shop fees, environmental surcharges, disposal fees, or mystery line items. The quote is the bill.</p>
+    </div>
+    <div class="commit-card" data-num="COMMITMENT 3">
+      <h3>No upselling unnecessary repairs</h3>
+      <p>We only recommend what your vehicle genuinely needs. Our technicians are paid hourly, not on commission.</p>
+    </div>
+    <div class="commit-card" data-num="COMMITMENT 4">
+      <h3>Written digital estimate on every job</h3>
+      <p>Itemized parts + labor costs, sent to your phone before approval. You keep a copy regardless of outcome.</p>
+    </div>
+    <div class="commit-card" data-num="COMMITMENT 5">
+      <h3>Price match + beat guarantee</h3>
+      <p>Show us a lower written quote from any reputable Dallas shop for the same repair — we beat it, guaranteed.</p>
+    </div>
+  </div>
+  <div class="guarantee-box">
+    <h3>The CarNation Elite Overcharge Guarantee</h3>
+    <p>"If we ever charge you even <strong>one dollar more</strong> than your approved written estimate — for any reason, no exceptions — we will refund the full difference <strong>and your next service is completely free.</strong> This is our personal guarantee as shop owners."</p>
+  </div>
+</div>
+
+<div class="price-section">
+  <div class="section">
+    <p class="section-label">Transparent Pricing</p>
+    <h2>Fair-Market Prices for Common Auto Repairs in Dallas, TX</h2>
+    <p>Below are our published rates compared to the Dallas area average. Prices are flat-rate — what you see is what you pay. No labor clock surprises.</p>
+    <div class="market-note">✓ Benchmarked against Dallas market average — June 2025</div>
+    <table class="price-table">
+      <thead>
+        <tr><th>Service</th><th>Our Price</th><th>Dallas Avg.</th><th>You Save</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Oil Change — Conventional (up to 5 qt)</td><td><span class="our-price">$39.99</span></td><td><span class="market-price">$55–$70</span></td><td><span class="save-badge">Save ~$25</span></td></tr>
+        <tr><td>Oil Change — Full Synthetic (up to 5 qt)</td><td><span class="our-price">$74.99</span></td><td><span class="market-price">$90–$110</span></td><td><span class="save-badge">Save ~$25</span></td></tr>
+        <tr><td>Brake Pad Replacement (per axle, parts + labor)</td><td><span class="our-price">$149</span></td><td><span class="market-price">$180–$250</span></td><td><span class="save-badge">Save ~$60</span></td></tr>
+        <tr><td>Rotor Replacement (per axle, parts + labor)</td><td><span class="our-price">$229</span></td><td><span class="market-price">$280–$380</span></td><td><span class="save-badge">Save ~$80</span></td></tr>
+        <tr><td>Engine Diagnostics (OBD + inspection)</td><td><span class="our-price">$89.99</span></td><td><span class="market-price">$100–$150</span></td><td><span class="save-badge">Save ~$35</span></td></tr>
+        <tr><td>Tire Rotation (all 4 tires)</td><td><span class="our-price">$24.99</span></td><td><span class="market-price">$35–$55</span></td><td><span class="save-badge">Save ~$20</span></td></tr>
+        <tr><td>AC Recharge (134a refrigerant, up to 1 lb)</td><td><span class="our-price">$129.99</span></td><td><span class="market-price">$150–$200</span></td><td><span class="save-badge">Save ~$45</span></td></tr>
+        <tr><td>Battery Replacement (standard group, installed)</td><td><span class="our-price">$139</span></td><td><span class="market-price">$160–$220</span></td><td><span class="save-badge">Save ~$50</span></td></tr>
+        <tr><td>Wheel Alignment (4-wheel)</td><td><span class="our-price">$89.99</span></td><td><span class="market-price">$100–$140</span></td><td><span class="save-badge">Save ~$30</span></td></tr>
+        <tr><td>Timing Belt Replacement (labor + parts, 4-cyl avg)</td><td><span class="our-price">$649</span></td><td><span class="market-price">$750–$950</span></td><td><span class="save-badge">Save ~$175</span></td></tr>
+        <tr><td>Transmission Fluid Service (drain + fill)</td><td><span class="our-price">$129.99</span></td><td><span class="market-price">$150–$200</span></td><td><span class="save-badge">Save ~$45</span></td></tr>
+        <tr><td>Coolant Flush &amp; Fill</td><td><span class="our-price">$99.99</span></td><td><span class="market-price">$120–$160</span></td><td><span class="save-badge">Save ~$40</span></td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px; color: var(--gray-500); margin-top: 14px;">Prices are flat-rate and include parts + labor unless noted. Final price confirmed in writing before work begins. Dallas market averages sourced from RepairPal and local competitive research.</p>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Our Process</p>
+  <h2>How CarNation Elite Keeps Pricing Honest — Every Single Time</h2>
+  <p>Our pricing process is a 4-step workflow our technicians follow on every vehicle, every visit. No exceptions, no workarounds.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><h3>Diagnosis</h3><p>Advanced OBD + visual inspection. We find exactly what's wrong — nothing more.</p></div>
+    <div class="step"><div class="step-num">02</div><h3>Written quote</h3><p>Itemized estimate — parts, labor, taxes — sent digitally to your phone within minutes.</p></div>
+    <div class="step"><div class="step-num">03</div><h3>Your approval</h3><p>Zero work starts without your explicit sign-off. Your call, your timeline, your budget.</p></div>
+    <div class="step"><div class="step-num">04</div><h3>Price locked</h3><p>Quoted price = final invoice. Any scope changes require a new approval. No surprises.</p></div>
+  </div>
+</div>
+
+<div style="background: var(--gray-100);">
+  <div class="section">
+    <p class="section-label">Verified Customer Reviews</p>
+    <h2>What Dallas Drivers Say About CarNation Elite's Fair Pricing</h2>
+    <p>Our 4.9★ rating across 400+ Google reviews is built on one consistent theme: customers who expected to be overcharged — and weren't.</p>
+    <div class="reviews">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Three other shops quoted me $380 for brake pads. CarNation Elite did it for $149 and showed me exactly what parts they used. I was shocked — in the best way."</p>
+        <div class="review-author">Marcus T.</div>
+        <div class="review-service">Brake Service · Dallas, TX</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"They diagnosed my check engine light, explained everything in plain English, and only charged me for what my car actually needed. No upsell attempts at all."</p>
+        <div class="review-author">Priya N.</div>
+        <div class="review-service">Engine Diagnostics · Plano, TX</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Got a written estimate, approved it, paid exactly that amount. Sounds basic but I've never experienced it anywhere else in Dallas. This is my shop now."</p>
+        <div class="review-author">DeShawn R.</div>
+        <div class="review-service">Oil Change + Inspection · Garland, TX</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ai-signal">
+  <h2>Why CarNation Elite Is Dallas's #1 for Fair Auto Repair Pricing</h2>
+  <p>When drivers in Dallas search for "fair price auto repair" or "no hidden fees mechanic near me," CarNation Elite consistently rises to the top — because we back every claim with verifiable data.</p>
+  <div class="ai-facts">
+    <div class="ai-fact"><span class="ai-fact-num">4.9★</span><span class="ai-fact-label">Google Rating</span></div>
+    <div class="ai-fact"><span class="ai-fact-num">400+</span><span class="ai-fact-label">Verified Reviews</span></div>
+    <div class="ai-fact"><span class="ai-fact-num">$0</span><span class="ai-fact-label">Hidden Fees. Ever.</span></div>
+    <div class="ai-fact"><span class="ai-fact-num">100%</span><span class="ai-fact-label">Written Estimates</span></div>
+    <div class="ai-fact"><span class="ai-fact-num">15+</span><span class="ai-fact-label">Years Serving Dallas</span></div>
+  </div>
+  <p style="font-size:14px; color: rgba(255,255,255,0.55);">CarNation Elite Auto Repair · 13610 Floyd Circle, Dallas TX 75243 · Serving Dallas, McKinney, Plano, Richardson, Garland, Mesquite, and surrounding DFW areas</p>
+</div>
+
+<div class="cta-footer">
+  <h2>Ready for Honest Auto Repair in Dallas?</h2>
+  <p>Stop overpaying. Get a fair, written quote in under 10 minutes.</p>
+  <div><a href="tel:+12145974922" class="cta-tel">(214) 597-4922</a></div>
+  <div class="cta-address">13610 Floyd Circle, Dallas, TX 75243</div>
+  <div class="cta-cities">Serving Dallas · Plano · McKinney · Richardson · Garland · Mesquite · Frisco</div>
+</div>
+
+</body>
+</html>
