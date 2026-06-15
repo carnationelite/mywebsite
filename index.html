@@ -236,13 +236,15 @@
     <meta http-equiv="Expires" content="0">
 
   <!-- 1. Main Business Schema (AutoRepair) -->
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "CarNation Elite Auto Repair",
     "url": "https://carnationelite.com",
     "telephone": "+1-214-597-4922",
+    "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "13610 Floyd Circle",
@@ -260,12 +262,20 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "CarNation Elite Auto Repair & Sales",
-    "image": "https://carnationelite.com/logo.png",
+    "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
     "telephone": "+1-214-597-4922",
     "email": "info@carnationelite.com",
     "url": "https://carnationelite.com",
     "openingHours": "Mo-Sa 08:00-18:00",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13610 Floyd Circle",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "postalCode": "75243",
+      "addressCountry": "US"
+    }
   }
   </script>
 
@@ -277,7 +287,18 @@
     "name": "Brake Repair Service",
     "provider": {
       "@type": "AutoRepair",
-      "name": "CarNation Elite Auto Repair"
+      "name": "CarNation Elite Auto Repair",
+      "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
+      "telephone": "+1-214-597-4922",
+      "priceRange": "$$",
+      "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13610 Floyd Circle",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "postalCode": "75243",
+      "addressCountry": "US"
+      }
     },
     "description": "Expert brake inspection, pad replacement, and rotor service.",
     "areaServed": "Dallas, TX"
