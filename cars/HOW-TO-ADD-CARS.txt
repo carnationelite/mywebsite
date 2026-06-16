@@ -1,0 +1,89 @@
+====================================================
+  HOW TO ADD / REMOVE / UPDATE CARS ON YOUR WEBSITE
+  CarNation Elite — carsales.html
+====================================================
+
+ADDING A NEW CAR
+─────────────────
+1. Create a folder inside  cars/  with a short name (no spaces).
+   Examples:
+     cars/2023-lexus-rx350/
+     cars/2020-chevy-silverado/
+     cars/2022-audi-a4/
+
+2. Drop your photos into that folder.
+   Name the main (cover) photo  main.jpg  (or main.png / main.webp).
+   Name extras anything you like:  interior.jpg, rear.jpg, engine.jpg, etc.
+
+3. Open  carsales.html  in a text editor (Notepad, VS Code, etc.)
+
+4. Find the section that says:
+       ★★★  CAR INVENTORY DATA  ★★★
+
+5. Copy this template and paste it ABOVE the last car:
+
+        {
+            year:    "2023",
+            make:    "Toyota",
+            model:   "RAV4",
+            trim:    "XLE AWD",
+            price:   "$29,900",
+            mileage: "18,400 mi",
+            engine:  "2.5L I4",
+            color:   "Blueprint",
+            trans:   "Automatic",
+            vin:     "",
+            badge:   "new",      // "new" | "hot" | ""
+            sold:    false,
+            features: ["AWD", "Sunroof", "Apple CarPlay", "Heated Seats"],
+            photo:   "cars/2023-toyota-rav4/main.jpg",
+            gallery: [
+                "cars/2023-toyota-rav4/main.jpg",
+                "cars/2023-toyota-rav4/interior.jpg",
+                "cars/2023-toyota-rav4/rear.jpg"
+            ]
+        },
+
+6. Save the file. Refresh your website. Done!
+
+
+MARKING A CAR AS SOLD
+──────────────────────
+Find the car's block in carsales.html and change:
+    sold:  false,
+to:
+    sold:  true,
+
+The card will show "SOLD" automatically.
+
+
+REMOVING A CAR COMPLETELY
+──────────────────────────
+Delete the entire  { ... },  block for that car in carsales.html.
+You can also delete its folder from  cars/  if you want.
+
+
+BADGE OPTIONS
+─────────────
+badge: "new"   → green "NEW ARRIVAL" badge
+badge: "hot"   → orange "HOT DEAL" badge
+badge: ""      → no badge (leave blank)
+
+
+PHOTO TIPS
+──────────
+- Use JPG or WebP for best web performance
+- Resize photos to around 1200×800 pixels before uploading
+- The first photo in "gallery" is shown as the card cover
+- You can list as many gallery photos as you want
+
+
+CURRENT CAR FOLDERS
+────────────────────
+cars/2022-bmw-x3/
+cars/2020-toyota-camry/
+cars/2019-honda-accord/
+cars/2021-ford-f150/
+cars/2018-mercedes-c300/
+
+====================================================
