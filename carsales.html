@@ -162,6 +162,90 @@
     }
 }
     </script>
+    <style>
+/* ============================================================
+   CAR INVENTORY — CUSTOM STYLES  (matches carnationelite.com)
+   Brand red: #d90202  |  Black: #111111  |  Gray: #585b6b
+   ============================================================ */
+
+/* ── Hero Banner ── */
+.cars-hero { background: #111111; padding: 60px 0 50px; text-align: center; position: relative; overflow: hidden; }
+.cars-hero::before { content: ''; position: absolute; inset: 0; background: url('assets/images/backgrounds/page-header-bg.jpg') center/cover no-repeat; opacity: 0.08; }
+.cars-hero .container { position: relative; z-index: 2; }
+.cars-hero h1 { color: #fff; font-size: clamp(28px, 4vw, 48px); font-weight: 800; margin-bottom: 12px; }
+.cars-hero h1 span { color: #d90202; }
+.cars-hero p { color: rgba(255, 255, 255, .75); font-size: 17px; margin-bottom: 0; }
+.cars-hero .badge-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+.cars-hero .badge-strip .badge-item { background: rgba(217, 2, 2, .15); border: 1px solid rgba(217, 2, 2, .4); color: #fff; padding: 8px 18px; border-radius: 50px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.cars-hero .badge-item i { color: #d90202; }
+
+/* ── CTA Bar ── */
+.cta-bar { background: #d90202; padding: 14px 0; text-align: center; }
+.cta-bar p { margin: 0; color: #fff; font-weight: 700; font-size: 16px; }
+.cta-bar a { color: #fff; text-decoration: underline; }
+
+/* ── Inventory Section ── */
+.inventory-section { padding: 60px 0; background: #f5f5f5; }
+.inventory-count { background: #111111; color: #fff; border-radius: 50px; padding: 2px 10px; font-size: 12px; font-weight: 700; display: inline-block; margin-left: 6px; }
+
+/* ── Car Cards ── */
+.car-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0, 0, 0, .08); transition: transform .25s ease, box-shadow .25s ease; height: 100%; display: flex; flex-direction: column; border: 1px solid #e6e6e6; }
+.car-card:hover { transform: translateY(-5px); box-shadow: 0 10px 36px rgba(0, 0, 0, .14); border-color: #d90202; }
+.car-photo-wrap { position: relative; overflow: hidden; height: 220px; background: #ebebeb; }
+.car-photo-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.car-card:hover .car-photo-wrap img { transform: scale(1.04); }
+.car-photo-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0); transition: background .3s; display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; }
+.car-card:hover .car-photo-overlay { background: rgba(0, 0, 0, .5); opacity: 1; }
+.car-photo-overlay .btn-overlay { background: #fff; color: #111111; border: none; border-radius: 50px; padding: 9px 20px; font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: background .2s, color .2s; }
+.car-photo-overlay .btn-overlay:hover { background: #d90202; color: #fff; }
+
+/* Badges */
+.photo-badges { position: absolute; top: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; }
+.badge-sold { background: #111111; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.badge-new { background: #d90202; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.badge-hot { background: #ff9800; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.photo-count { position: absolute; bottom: 12px; right: 12px; background: rgba(0, 0, 0, .65); color: #fff; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 5px; }
+
+/* Card Details */
+.car-card-body { padding: 18px 20px; flex: 1; display: flex; flex-direction: column; }
+.car-title { font-size: 18px; font-weight: 800; color: #111111; margin-bottom: 2px; line-height: 1.3; }
+.car-trim { font-size: 13px; color: #585b6b; margin-bottom: 10px; }
+.car-price { font-size: 28px; font-weight: 900; color: #d90202; margin-bottom: 14px; line-height: 1; }
+.car-price small { font-size: 12px; color: #585b6b; font-weight: 400; display: block; margin-top: 4px; }
+.car-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.spec-item { display: flex; align-items: center; gap: 7px; font-size: 13px; color: #585b6b; }
+.spec-item i { color: #d90202; width: 14px; text-align: center; }
+.spec-item strong { color: #111111; font-weight: 700; }
+.car-features { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.feature-tag { background: #f5f5f5; color: #111111; border: 1px solid #e6e6e6; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+
+.car-card-footer { border-top: 1px solid #e6e6e6; padding: 14px 20px; display: flex; gap: 10px; }
+.btn-call { flex: 1; background: #d90202; color: #fff; border: none; border-radius: 6px; padding: 11px 8px; font-size: 13px; font-weight: 700; text-decoration: none; text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background .2s; }
+.btn-call:hover { background: #111111; color: #fff; }
+.btn-gallery { flex: 1; background: #fff; color: #111111; border: 1.5px solid #e6e6e6; border-radius: 6px; padding: 11px 8px; font-size: 13px; font-weight: 700; cursor: pointer; text-align: center; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background .2s, border-color .2s, color .2s; text-decoration: none; }
+.btn-gallery:hover { background: #111111; border-color: #111111; color: #fff; }
+
+.car-card.is-sold .car-photo-wrap::after { content: 'SOLD'; position: absolute; inset: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 36px; font-weight: 900; display: flex; align-items: center; justify-content: center; letter-spacing: 6px; }
+.car-card.is-sold .car-price { color: #aaa; text-decoration: line-through; }
+
+/* Filter Navigation */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; align-items: center; }
+.filter-btn { background: #fff; border: 1.5px solid #e6e6e6; color: #585b6b; padding: 7px 20px; border-radius: 50px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s; }
+.filter-btn.active, .filter-btn:hover { background: #d90202; color: #fff; border-color: #d90202; }
+.no-cars { text-align: center; padding: 40px; color: #777; width: 100%; }
+.no-cars i { font-size: 50px; margin-bottom: 10px; color: #bbb; }
+
+/* ── Why Buy ── */
+.why-card { text-align: center; padding: 32px 24px; border: 1.5px solid #e6e6e6; border-radius: 12px; transition: box-shadow .25s, border-color .25s; margin-top: 30px; background: #fff; }
+.why-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,.1); border-color: #d90202; }
+.why-icon { width: 64px; height: 64px; border-radius: 50%; background: #d90202; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-size: 24px; color: #fff; }
+.why-card h4 { font-size: 16px; font-weight: 800; color: #111111; margin-bottom: 8px; }
+.why-card p { font-size: 14px; color: #585b6b; margin: 0; }
+
+@media (max-width: 576px){
+  .car-specs { grid-template-columns: 1fr; }
+}
+</style>
     <link type="text/plain" rel="me" href="https://carnationelite.com/llms.txt" />
     <link type="text/plain" rel="me" href="https://carnationelite.com/llms-full.txt" />
 </head>
@@ -281,15 +365,22 @@
         </div>
 
 
-        <section class="page-header">
-            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
-            </div>
-            <div class="container">
-                <div class="page-header__inner">
-                    <h3>Car Sales</h3>
-                </div>
-            </div>
-        </section>
+        <section class="cars-hero">
+    <div class="container">
+        <h1>Used Cars for Sale in <span>Dallas, TX</span></h1>
+        <p>Handpicked, inspected vehicles — every car backed by our signature warranty</p>
+        <div class="badge-strip">
+            <div class="badge-item"><i class="fas fa-shield-alt"></i> 100% Inspected Inventory</div>
+            <div class="badge-item"><i class="fas fa-tools"></i> 1-Year Parts Coverage</div>
+            <div class="badge-item"><i class="fas fa-dollar-sign"></i> No Hidden Fees</div>
+            <div class="badge-item"><i class="fas fa-file-alt"></i> Inspection Report Included</div>
+        </div>
+    </div>
+</section>
+
+<div class="cta-bar">
+    <p><i class="fas fa-phone-alt"></i> &nbsp; Ready to buy? Call us now: <a href="tel:+14693646663">(469) 364-6663</a> &nbsp;|&nbsp; All prices are firm &amp; include our full warranty</p>
+</div>
 
     <section class="project-details">
             <div class="container">
@@ -353,6 +444,35 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div style="margin-top: 50px;">
+    <hr>
+    <h3 style="margin: 30px 0 15px 0; font-weight: 800; color: #111111;">Available Live Inventory Selection</h3>
+    <div id="filterBar" class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Makes <span id="carCount" class="inventory-count">0</span></button>
+    </div>
+    <div id="carGrid" class="row"></div>
+    <div id="noCars" class="no-cars" style="display:none;">
+        <i class="fas fa-car-slash"></i>
+        <p>No vehicles match your criteria at this moment.</p>
+    </div>
+</div>
+
+<div class="row style-why-row" style="margin-top: 40px;">
+    <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-handshake"></i></div>
+            <h4>Easy Financing</h4>
+            <p>Multiple financing options available. We work with all credit types.</p>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-tag"></i></div>
+            <h4>Firm, Fair Pricing</h4>
+            <p>No hidden fees, no last-minute surprises — what you see is what you pay.</p>
+        </div>
+    </div>
+</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -587,6 +707,245 @@
     <script src="assets/js/gsap/ScrollTrigger.js"></script>
     <script src="assets/js/gsap/SplitText.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+const CARS = [
+  {
+    year: "2022",
+    make: "BMW",
+    model: "X3",
+    trim: "sDrive30i",
+    price: "$21,850",
+    mileage: "36,546 mi",
+    engine: "2.0L Turbo I4",
+    color: "Black Sapphire",
+    trans: "Automatic",
+    vin: "", 
+    badge: "hot", 
+    sold: false,
+    features: [ "Heated Seats", "Backup Camera", "Navigation", "Sunroof" ],
+    photo: "cars/2022-bmw-x3/main.jpg",
+    gallery: [
+      "cars/2022-bmw-x3/main.jpg",
+      "cars/2022-bmw-x3/interior.jpg",
+      "cars/2022-bmw-x3/rear.jpg"
+    ]
+  },
+  {
+    year: "2020",
+    make: "Toyota",
+    model: "Camry",
+    trim: "SE",
+    price: "$18,500",
+    mileage: "52,200 mi",
+    engine: "2.5L I4",
+    color: "Midnight Black",
+    trans: "Automatic",
+    vin: "",
+    badge: "new",
+    sold: false,
+    features: [ "Apple CarPlay", "Lane Assist", "Backup Camera" ],
+    photo: "cars/2020-toyota-camry/main.jpg",
+    gallery: [
+      "cars/2020-toyota-camry/main.jpg",
+      "cars/2020-toyota-camry/interior.jpg"
+    ]
+  },
+  {
+    year: "2019",
+    make: "Honda",
+    model: "Accord",
+    trim: "Sport",
+    price: "$16,900",
+    mileage: "68,400 mi",
+    engine: "1.5L Turbo I4",
+    color: "Sonic Gray",
+    trans: "CVT",
+    vin: "",
+    badge: "",
+    sold: false,
+    features: [ "Honda Sensing", "Remote Start", "Sunroof" ],
+    photo: "cars/2019-honda-accord/main.jpg",
+    gallery: [
+      "cars/2019-honda-accord/main.jpg",
+      "cars/2019-honda-accord/interior.jpg"
+    ]
+  },
+  {
+    year: "2021",
+    make: "Ford",
+    model: "F-150",
+    trim: "XLT 4WD",
+    price: "$34,500",
+    mileage: "41,800 mi",
+    engine: "3.5L EcoBoost V6",
+    color: "Oxford White",
+    trans: "10-Speed Auto",
+    vin: "",
+    badge: "hot",
+    sold: false,
+    features: [ "4WD", "Tow Package", "Backup Camera", "Bed Liner" ],
+    photo: "cars/2021-ford-f150/main.jpg",
+    gallery: [
+      "cars/2021-ford-f150/main.jpg",
+      "cars/2021-ford-f150/interior.jpg",
+      "cars/2021-ford-f150/bed.jpg"
+    ]
+  },
+  {
+    year: "2018",
+    make: "Mercedes-Benz",
+    model: "C300",
+    trim: "4MATIC",
+    price: "$24,900",
+    mileage: "58,100 mi",
+    engine: "2.0L Turbo I4",
+    color: "Polar White",
+    trans: "7-Speed Auto",
+    vin: "",
+    badge: "",
+    sold: false,
+    features: [ "Leather Seats", "Navigation", "Sunroof", "Blind Spot" ],
+    photo: "cars/2018-mercedes-c300/main.jpg",
+    gallery: [
+      "cars/2018-mercedes-c300/main.jpg",
+      "cars/2018-mercedes-c300/interior.jpg"
+    ]
+  }
+];
+</script>
+
+<script>
+(function() {
+  function fmt(n) { return parseInt(n.replace(/\D/g, ''), 10); }
+
+  function badgeHTML(b) {
+    if (b === 'new') return '<span class="badge-new">NEW ARRIVAL</span>';
+    if (b === 'hot') return '<span class="badge-hot"><i class="fas fa-fire"></i> HOT DEAL</span>';
+    return '';
+  }
+
+  function buildCard(car, idx) {
+    const isSold = car.sold;
+    const galleryId = 'gallery-' + idx;
+    const galleryLinks = (car.gallery || [car.photo]).map((src, i) => `
+      <a href="${src}" class="gallery-item-${galleryId}" data-title="${car.year} ${car.make} ${car.model} — Photo ${i + 1}" style="display:none;"></a>
+    `).join('');
+    const photoCount = (car.gallery || [car.photo]).length;
+    const featureTags = (car.features || []).map(f => `<span class="feature-tag">${f}</span>`).join('');
+    const vinRow = car.vin ? `<div class="spec-item" style="grid-column:1/-1"><i class="fas fa-barcode"></i><span>VIN: <strong>${car.vin}</strong></span></div>` : '';
+
+    return `
+      <div class="col-md-6 col-xl-4 car-item" data-make="${car.make.toLowerCase()}" data-sold="${isSold}">
+        <div class="car-card ${isSold ? 'is-sold' : ''}">
+          <div class="car-photo-wrap">
+            <img src="${car.photo}" alt="${car.year} ${car.make} ${car.model}" loading="lazy" onerror="this.src='assets/images/project/project-details-img-1.jpg'">
+            <div class="photo-badges">
+              ${isSold ? '<span class="badge-sold">SOLD</span>' : badgeHTML(car.badge)}
+            </div>
+            <div class="photo-count"><i class="fas fa-camera"></i> ${photoCount} Photo${photoCount !== 1 ? 's' : ''}</div>
+            ${!isSold ? `
+            <div class="car-photo-overlay">
+              <a href="tel:+14693646663" class="btn-overlay"><i class="fas fa-phone"></i> Call Us</a>
+              <button class="btn-overlay open-gallery" data-gallery="${galleryId}"><i class="fas fa-images"></i> Photos</button>
+            </div>` : ''}
+          </div>
+          <div class="car-card-body">
+            <div class="car-title">${car.year} ${car.make} ${car.model}</div>
+            <div class="car-trim">${car.trim}</div>
+            <div class="car-price">
+              ${car.price}
+              <small>Firm price &bull; No hidden fees</small>
+            </div>
+            <div class="car-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><span><strong>${car.mileage}</strong></span></div>
+              <div class="spec-item"><i class="fas fa-cog"></i><span><strong>${car.engine}</strong></span></div>
+              <div class="spec-item"><i class="fas fa-palette"></i><span><strong>${car.color}</strong></span></div>
+              <div class="spec-item"><i class="fas fa-exchange-alt"></i><span><strong>${car.trans}</strong></span></div>
+              ${vinRow}
+            </div>
+            ${featureTags ? `<div class="car-features">${featureTags}</div>` : ''}
+          </div>
+          <div class="car-card-footer">
+            ${isSold 
+              ? `<span class="btn-call" style="background:#aaa;cursor:not-allowed;flex:1;justify-content:center;">SOLD</span>`
+              : `<a href="tel:+14693646663" class="btn-call"><i class="fas fa-phone"></i> (469) 364-6663</a>
+                 <button class="btn-gallery open-gallery" data-gallery="${galleryId}"><i class="fas fa-images"></i> View Photos</button>`
+            }
+          </div>
+          <div class="gallery-links" id="${galleryId}" style="display:none;">${galleryLinks}</div>
+        </div>
+      </div>`;
+  }
+
+  function render(filter) {
+    const grid = document.getElementById('carGrid');
+    const noCars = document.getElementById('noCars');
+    if (!grid) return;
+    let html = '';
+    let shown = 0;
+    CARS.forEach(function(car, idx) {
+      const makeKey = car.make.toLowerCase();
+      if (filter === 'all' || filter === makeKey) {
+        html += buildCard(car, idx);
+        shown++;
+      }
+    });
+    grid.innerHTML = html;
+    if (noCars) noCars.style.display = shown === 0 ? 'block' : 'none';
+
+    grid.querySelectorAll('.open-gallery').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const gid = this.dataset.gallery;
+        const items = document.querySelectorAll('.gallery-item-' + gid);
+        if (!items.length) return;
+        const links = Array.from(items).map(function(a) {
+          return { src: a.href, title: a.dataset.title };
+        });
+        $.magnificPopup.open({
+          items: links,
+          type: 'image',
+          gallery: { enabled: true, navigateByImgClick: true },
+          image: { titleSrc: 'title' },
+          removalDelay: 300,
+          mainClass: 'mfp-fade'
+        });
+      });
+    });
+  }
+
+  function buildFilters() {
+    const bar = document.getElementById('filterBar');
+    if (!bar) return;
+    const makes = [...new Set(CARS.map(function(c) { return c.make; }))];
+    makes.forEach(function(make) {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.filter = make.toLowerCase();
+      btn.textContent = make;
+      bar.appendChild(btn);
+    });
+    bar.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        bar.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        render(this.dataset.filter);
+      });
+    });
+  }
+
+  function updateCount() {
+    const el = document.getElementById('carCount');
+    if (!el) return;
+    const avail = CARS.filter(function(c) { return !c.sold; }).length;
+    el.textContent = avail + ' Available';
+  }
+
+  window.filterCars = function(f) { render(f); };
+  buildFilters();
+  render('all');
+  updateCount();
+})();
+</script>
     <!-- AI Chatbot -->
     <div class="ai-chatbot-overlay"></div>
     <div class="ai-chatbot-toggle">
@@ -619,7 +978,117 @@
             </button>
         </div>
     </div>
-
+<script>
+    const CARS = [
+        // ─── CAR 1 ──────────────────────────────────────────────────
+        {
+            year:    "2022",
+            make:    "BMW",
+            model:   "X3",
+            trim:    "sDrive30i",
+            price:   "$21,850",
+            mileage: "36,546 mi",
+            engine:  "2.0L Turbo I4",
+            color:   "Black Sapphire",
+            trans:   "Automatic",
+            vin:     "",            // optional — leave "" to hide
+            badge:   "hot",         // "new" | "hot" | ""
+            sold:    false,
+            features: ["Heated Seats", "Backup Camera", "Navigation", "Sunroof"],
+            photo:   "cars/2022-bmw-x3/main.jpg",
+            gallery: [
+                "cars/2022-bmw-x3/main.jpg",
+                "cars/2022-bmw-x3/interior.jpg",
+                "cars/2022-bmw-x3/rear.jpg"
+            ]
+        },
+        // ─── CAR 2 ──────────────────────────────────────────────────
+        {
+            year:    "2020",
+            make:    "Toyota",
+            model:   "Camry",
+            trim:    "SE",
+            price:   "$18,500",
+            mileage: "52,200 mi",
+            engine:  "2.5L I4",
+            color:   "Midnight Black",
+            trans:   "Automatic",
+            vin:     "",
+            badge:   "new",
+            sold:    false,
+            features: ["Apple CarPlay", "Lane Assist", "Backup Camera"],
+            photo:   "cars/2020-toyota-camry/main.jpg",
+            gallery: [
+                "cars/2020-toyota-camry/main.jpg",
+                "cars/2020-toyota-camry/interior.jpg"
+            ]
+        },
+        // ─── CAR 3 ──────────────────────────────────────────────────
+        {
+            year:    "2019",
+            make:    "Honda",
+            model:   "Accord",
+            trim:    "Sport",
+            price:   "$16,900",
+            mileage: "68,400 mi",
+            engine:  "1.5L Turbo I4",
+            color:   "Sonic Gray",
+            trans:   "CVT",
+            vin:     "",
+            badge:   "",
+            sold:    false,
+            features: ["Honda Sensing", "Remote Start", "Sunroof"],
+            photo:   "cars/2019-honda-accord/main.jpg",
+            gallery: [
+                "cars/2019-honda-accord/main.jpg",
+                "cars/2019-honda-accord/interior.jpg"
+            ]
+        },
+        // ─── CAR 4 ──────────────────────────────────────────────────
+        {
+            year:    "2021",
+            make:    "Ford",
+            model:   "F-150",
+            trim:    "XLT 4WD",
+            price:   "$34,500",
+            mileage: "41,800 mi",
+            engine:  "3.5L EcoBoost V6",
+            color:   "Oxford White",
+            trans:   "10-Speed Auto",
+            vin:     "",
+            badge:   "hot",
+            sold:    false,
+            features: ["4WD", "Tow Package", "Backup Camera", "Bed Liner"],
+            photo:   "cars/2021-ford-f150/main.jpg",
+            gallery: [
+                "cars/2021-ford-f150/main.jpg",
+                "cars/2021-ford-f150/interior.jpg",
+                "cars/2021-ford-f150/bed.jpg"
+            ]
+        },
+        // ─── CAR 5 ──────────────────────────────────────────────────
+        {
+            year:    "2018",
+            make:    "Mercedes-Benz",
+            model:   "C300",
+            trim:    "4MATIC",
+            price:   "$24,900",
+            mileage: "58,100 mi",
+            engine:  "2.0L Turbo I4",
+            color:   "Polar White",
+            trans:   "7-Speed Auto",
+            vin:     "",
+            badge:   "",
+            sold:    false,
+            features: ["Leather Seats", "Navigation", "Sunroof", "Blind Spot"],
+            photo:   "cars/2018-mercedes-c300/main.jpg",
+            gallery: [
+                "cars/2018-mercedes-c300/main.jpg",
+                "cars/2018-mercedes-c300/interior.jpg"
+            ]
+        }
+    ];
+    </script>
     <script src="assets/js/chatbot.js"></script>
 <script src="assets/js/smoothscroll.min.js"></script>
 </body>
