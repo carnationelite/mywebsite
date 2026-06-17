@@ -697,11 +697,11 @@
 
             CARS = loadedCars;
             
-            // Fire the grid renderer once data is ready
-            if (typeof render === "function") {
-                render('all');
-                buildFilters();
-                updateCount();
+            // Fire the global grid renderer now that the data is officially ready
+            if (typeof window.renderInventory === "function") {
+                window.renderInventory('all');
+                window.buildInventoryFilters();
+                window.updateInventoryCount();
             }
         } catch (error) {
             console.error("Inventory database sync error:", error);
@@ -786,7 +786,7 @@
         }
 
         // ── render grid ──────────────────────────────────────────
-        function render(filter){
+        window.renderInventory = function(filter){
             const grid = document.getElementById('carGrid');
             const noCars = document.getElementById('noCars');
             let html = '';
@@ -823,7 +823,7 @@
         }
 
         // ── build filter buttons ─────────────────────────────────
-        function buildFilters(){
+        window.buildInventoryFilters = function(){
             const makes = [...new Set(CARS.map(function(c){ return c.make; }))];
             const bar = document.getElementById('filterBar');
             makes.forEach(function(make){
@@ -837,22 +837,20 @@
                 btn.addEventListener('click', function(){
                     bar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
                     this.classList.add('active');
-                    render(this.dataset.filter);
+                    window.renderInventory(this.dataset.filter);
                 });
             });
         }
 
         // ── update count badge ───────────────────────────────────
-        function updateCount(){
+       window.updateInventoryCount = function(){
             const avail = CARS.filter(function(c){ return !c.sold; }).length;
             document.getElementById('carCount').textContent = avail + ' Available';
         }
 
         // ── init ─────────────────────────────────────────────────
         window.filterCars = function(f){ render(f); };
-        buildFilters();
-        render('all');
-        updateCount();
+        window.filterCars = function(f){ window.renderInventory(f); };
     })();
     </script>
 
