@@ -659,7 +659,7 @@
             for (let i = 1; i < rows.length; i++) {
                 if (!rows[i].trim()) continue;
                 
-                const columns = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+                const columns = rows[i].split('\t');
                 const clean = (val) => (val || "").replace(/^"|"$/g, '').trim();
 
                 if (!clean(columns[1])) continue;
@@ -849,7 +849,6 @@
         }
 
         // ── init ─────────────────────────────────────────────────
-        window.filterCars = function(f){ render(f); };
         window.filterCars = function(f){ window.renderInventory(f); };
     })();
     </script>
