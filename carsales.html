@@ -761,6 +761,76 @@
         // ─── ADD MORE CARS ABOVE THIS LINE ──────────────────────────────
         // Copy any block above, paste it here, change the details & photo paths.
     ];
+    // Automatically fetch and add the Kia Soul from your published Google Sheet CSV
+    async function addKiaSoulFromSheet() {
+        const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSGpFrqhiq02uKcocNu0nHXIBoaPS8Bv1H3HwiH59Fjim4sk7VvnFe-0UaXleKYXpXLplsdAPfHGRkk/pub?gid=0&single=true&output=csv";
+        
+        try {
+            const response = await fetch(csvUrl);
+            const text = await response.text();
+            
+            // Break the spreadsheet rows apart
+            const rows = text.split('\n');
+            
+            // Look through the rows to find the Kia Soul
+            for (let i = 1; i < rows.length; i++) {
+                // Splits by comma but ignores commas inside quotation marks
+                const columns = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+                
+                // Column B (index 1) is Make, Column C (index 2) is Model
+                if (columns[1]?.replace(/^"|"$/g, '').trim().toLowerCase() === 'kia' && 
+                    columns[2]?.replace(/^"|"$/g, '').trim().toLowerCase() === 'soul') {
+                    
+                    // Clean helper to strip out Google Sheet wrap-quotes if present
+                    const clean = (val) => (val || "").replace(/^"|"$/g, '').trim();
+
+                    // Handle your semicolon-separated photo list in Column I (index 8)
+                    const photoList = columns[8] ? columns[8].split(';').map(p => clean(p)) : [];
+                    const mainPhoto = photoList[0] || "cars/2018-kia-soul/main.jpg";
+
+                    // Handle feature extraction from your Description in Column J (index 9)
+                    const descriptionText = clean(columns[9]);
+                    const autoFeatures = descriptionText.includes("●") 
+                        ? descriptionText.split("●").map(f => f.trim()).filter(Boolean)
+                        : ["Bluetooth", "Backup Camera", "Cruise Control"];
+
+                    const kiaSoulCard = {
+                        year:    clean(columns[0]) || "2018",
+                        make:    clean(columns[1]) || "Kia",
+                        model:   clean(columns[2]) || "Soul",
+                        trim:    clean(columns[3]) || "Base",
+                        price:   clean(columns[4]) || "$11,500",
+                        mileage: clean(columns[5]) || "72,000 mi",
+                        engine:  "1.6L I4", // Static default fallback
+                        color:   clean(columns[6]) || "White",
+                        trans:   "Automatic", // Static default fallback
+                        vin:     clean(columns[11]) || "", // Column L (index 11) is VIN
+                        badge:   clean(columns[10])?.toLowerCase() === 'active' ? 'new' : '', // Uses Status column
+                        sold:    clean(columns[10])?.toLowerCase() === 'sold', // If status is Sold
+                        features: autoFeatures,
+                        photo:   mainPhoto,
+                        gallery: photoList.length > 0 ? photoList : [mainPhoto]
+                    };
+                    
+                    // Add it straight into your current workspace inventory array
+                    CARS.unshift(kiaSoulCard);
+                    
+                    // Re-render template grid layouts
+                    if (typeof render === "function") {
+                        render('all');
+                        buildFilters();
+                        updateCount();
+                    }
+                    break;
+                }
+            }
+        } catch (error) {
+            console.error("Could not load Kia Soul from spreadsheet columns:", error);
+        }
+    }
+
+    // Run the loader immediately
+    addKiaSoulFromSheet();
     </script>
 
     <!-- ============================================================
