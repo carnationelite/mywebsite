@@ -1,1 +1,7 @@
 node_modules/
+
+# Airtable token — keep off GitHub, upload manually to server
+inventory-config.js
+
+# Test/scratch files — not for production
+car-sales.html
