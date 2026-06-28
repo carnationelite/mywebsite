@@ -32,6 +32,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://carnationelite.com/book-appointment.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://carnationelite.com/carsales.html</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -149,5 +155,49 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Specials -->
+  <url>
+    <loc>https://carnationelite.com/specials.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service pages -->
+  <url><loc>https://carnationelite.com/services/oil-change-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/brake-repair-service-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/engine-diagnostics-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/ac-heat-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/transmission-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/electrical-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/steering-suspension-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/battery-replacement-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/vehicle-inspection-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/fleet-services-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/roadside-assistance-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/services/hybrid-ev-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Vehicle make pages -->
+  <url><loc>https://carnationelite.com/vehicles/toyota-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/honda-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/ford-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/chevrolet-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/nissan-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/jeep-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/ram-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/gmc-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/subaru-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/hyundai-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/kia-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/bmw-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/mercedes-benz-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/audi-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/lexus-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/volkswagen-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/dodge-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/mazda-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/acura-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://carnationelite.com/vehicles/infiniti-repair-dallas.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
 </urlset>

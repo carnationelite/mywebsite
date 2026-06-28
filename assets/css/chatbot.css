@@ -1,10 +1,10 @@
 :root {
-    --chat-primary: #d90202;
-    --chat-secondary: #111111;
+    --chat-primary: #F97316;
+    --chat-secondary: #0F172A;
     --chat-bg: #ffffff;
     --chat-text: #333333;
     --chat-bot-msg: #f0f2f5;
-    --chat-user-msg: #d90202;
+    --chat-user-msg: #F97316;
 }
 
 .ai-chatbot-overlay {
@@ -33,20 +33,20 @@
     right: 30px;
     width: 55px;
     height: 55px;
-    background: linear-gradient(135deg, var(--chat-primary), #a30101);
+    background: linear-gradient(135deg, var(--chat-primary), #dc6211);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(217, 2, 2, 0.4);
+    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
     z-index: 2147483647;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .ai-chatbot-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 15px 30px rgba(217, 2, 2, 0.5);
+    box-shadow: 0 15px 30px rgba(249, 115, 22, 0.5);
 }
 
 .ai-chatbot-toggle i {
@@ -81,7 +81,7 @@
 }
 
 .ai-chatbot-header {
-    background: linear-gradient(to right, #d90202, #b30202);
+    background: linear-gradient(to right, #F97316, #dc6211);
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@
 }
 
 .ai-chatbot-send:hover {
-    background: #a30101;
+    background: #dc6211;
     transform: scale(1.05);
 }
 

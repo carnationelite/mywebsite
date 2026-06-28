@@ -1,18 +1,27 @@
 :root {
-  --servixa-font: "Inter", sans-serif;
+  --servixa-font: "Montserrat", sans-serif;
   --servixa-gray: #585b6b;
   --servixa-gray-rgb: 88, 91, 107;
-  --servixa-base: #d90202;
-  --servixa-base-rgb: 217, 2, 2;
+  --servixa-base: #F97316;
+  --servixa-base-rgb: 249, 115, 22;
   --servixa-primary: #ebebeb;
   --servixa-primary-rgb: 235, 235, 235;
-  --servixa-black: #111111;
-  --servixa-black-rgb: 17, 17, 17;
+  --servixa-black: #0F172A;
+  --servixa-black-rgb: 15, 23, 42;
+  --servixa-gray: #0F172A;
+  --servixa-gray-rgb: 15, 23, 42;
   --servixa-white: #ffffff;
   --servixa-white-rgb: 255, 255, 255;
   --servixa-bdr-color: #e6e6e6;
   --servixa-bdr-color-rgb: 230, 230, 230;
   --servixa-bdr-radius: 10px;
+
+  /* Brand palette — 60-30-10 rule */
+  --brand-canvas: #FFFFFF;        /* 60% dominant  — page/card backgrounds */
+  --brand-navy:   #0F172A;        /* 30% secondary — structure & typography */
+  --brand-orange: #F97316;        /* 10% accent    — CTAs & interactive only */
+  --brand-orange-rgb: 249, 115, 22;
+  --brand-navy-rgb:   15, 23, 42;
 }
 
 .row {
@@ -1371,7 +1380,12 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(var(--servixa-black-rgb), .95);
+  background: linear-gradient(
+    105deg,
+    rgba(15, 23, 42, 0.88) 0%,
+    rgba(15, 23, 42, 0.72) 45%,
+    rgba(15, 23, 42, 0.35) 100%
+  );
   z-index: 1;
 }
 
@@ -1610,10 +1624,12 @@ ul {
 .main-slider-two__sub-title {
   position: relative;
   display: block;
-  font-size: 16px;
-  color: var(--servixa-white);
-  font-weight: 600;
+  font-size: 13px;
+  color: var(--servixa-base);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   line-height: 1em;
+  letter-spacing: 3px;
   text-transform: uppercase;
   opacity: 0;
   -webkit-transform: perspective(400px) rotateY(0deg) translateY(-80px);
@@ -1643,12 +1659,14 @@ ul {
 
 .main-slider-two__title {
   position: relative;
-  font-size: 60px;
+  font-size: 58px;
   color: var(--servixa-white);
-  font-weight: 700;
-  line-height: 1.2em;
-  text-transform: capitalize;
-  margin-top: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.15em;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  margin-top: 16px;
   opacity: 0;
   -webkit-transform: perspective(400px) rotateY(0deg) translateY(-80px);
   -ms-transform: perspective(400px) rotateY(0deg) translateY(-80px);

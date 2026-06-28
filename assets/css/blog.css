@@ -1,0 +1,313 @@
+/*  ============================================================
+    Blog Brand Palette — 60 / 30 / 10 Rule
+    60%  Dominant  → #FFFFFF  canvas / backgrounds
+    30%  Secondary → #0F172A  structure / typography / nav / footer
+    10%  Accent    → #F97316  CTAs / links / badges / hovers ONLY
+    ============================================================ */
+
+/* ─── 1. Remap existing theme tokens on blog pages ─────────── */
+:root {
+  --servixa-base:      #F97316;    /* accent: replaces site red     */
+  --servixa-base-rgb:  249, 115, 22;
+  --servixa-black:     #0F172A;    /* navy:   replaces generic black */
+  --servixa-black-rgb: 15, 23, 42;
+  --servixa-gray:      #0F172A;    /* body text → navy for contrast */
+  --servixa-gray-rgb:  15, 23, 42;
+}
+
+/* ─── 2. Page canvas — 60% ──────────────────────────────────── */
+body,
+.page-wrapper {
+  background-color: var(--brand-canvas);
+}
+
+/* ─── 3. Navigation main bar — 30% ─────────────────────────── */
+.main-menu-two__wrapper {
+  background-color: var(--brand-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.main-menu-two__wrapper:before {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Nav links white on dark background */
+.main-menu-two .main-menu__list > li > a,
+.stricky-header.main-menu-two .main-menu__list > li > a {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+}
+
+/* Active / hover → orange accent */
+.main-menu-two .main-menu__list > li.current > a,
+.main-menu-two .main-menu__list > li:hover > a,
+.stricky-header.main-menu-two .main-menu__list > li.current > a,
+.stricky-header.main-menu-two .main-menu__list > li:hover > a {
+  color: var(--brand-orange);
+}
+
+.main-menu-two .main-menu__list > li.current > a::after,
+.main-menu-two .main-menu__list > li:hover > a::after,
+.stricky-header.main-menu-two .main-menu__list > li.current > a::after,
+.stricky-header.main-menu-two .main-menu__list > li:hover > a::after {
+  color: var(--brand-orange);
+}
+
+/* Contact top bar → navy (replaces red) */
+.main-menu-two__top-inner {
+  background-color: var(--brand-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ─── 4. Page hero banner — 30% ────────────────────────────── */
+.page-header {
+  background-color: var(--brand-navy);
+}
+
+.page-header__inner h3 {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+
+.page-header__inner {
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ─── 5. Article content container — 60% ───────────────────── */
+.service-details__content {
+  background-color: var(--brand-canvas);
+  padding-top: 1.5rem;
+}
+
+/* Body text — 30% */
+.service-details__content p {
+  color: var(--brand-navy);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* List items — 30% */
+.service-details__content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-details__content ul li {
+  color: var(--brand-navy);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+/* ─── 6. Headings — 30% ────────────────────────────────────── */
+.service-details__content h1,
+.service-details__content h2,
+.service-details__content h3,
+.service-details__content h4,
+.service-details__content h5,
+.service-details__content h6 {
+  color: var(--brand-navy);
+  font-weight: 700;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.service-details__content h1 { font-size: 2rem; }
+.service-details__content h2 { font-size: 1.5rem; }
+.service-details__content h3 { font-size: 1.25rem; }
+
+.section-title__title {
+  color: var(--brand-navy);
+  letter-spacing: -0.02em;
+}
+
+/* ─── 7. Category pill badge — 10% accent ──────────────────── */
+.section-title__tagline {
+  display: inline-block;
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+/* ─── 8. Article hyperlinks — 10% accent ───────────────────── */
+.service-details__content a,
+.service-details__content a:visited {
+  color: var(--brand-orange);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(var(--brand-orange-rgb), 0.35);
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.service-details__content a:hover,
+.service-details__content a:focus {
+  color: #dc6211;
+  border-bottom-color: #dc6211;
+  text-decoration: none;
+}
+
+/* ─── 9. FAQ accordion — card bg 60%, text 30% ─────────────── */
+.service-details__faq {
+  border-top: 2px solid rgba(15, 23, 42, 0.1) !important;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+}
+
+.service-details__faq h2 {
+  color: var(--brand-navy) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+}
+
+.service-details__faq details {
+  background-color: var(--brand-canvas);
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.75rem !important;
+  padding: 1rem 1.25rem !important;
+  transition: box-shadow 0.18s ease;
+}
+
+.service-details__faq details:hover {
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+}
+
+.service-details__faq details[open] {
+  border-color: rgba(var(--brand-orange-rgb), 0.35) !important;
+}
+
+.service-details__faq details summary {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  cursor: pointer;
+  list-style: none;
+  color: var(--brand-navy) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-details__faq details summary::-webkit-details-marker { display: none; }
+
+.service-details__faq details summary::after {
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-orange);
+  line-height: 1;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.service-details__faq details[open] summary::after {
+  content: "−";
+}
+
+.service-details__faq details p {
+  color: var(--brand-navy) !important;
+  opacity: 0.75;
+  margin-top: 0.75rem !important;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+/* ─── 10. Booking CTA section — 30% bg, 10% button ─────────── */
+.blog-cta-section {
+  background-color: var(--brand-navy);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.blog-cta-section__eyebrow {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.blog-cta-section__headline {
+  color: #FFFFFF;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.75rem;
+}
+
+.btn-brand-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 15px 34px;
+  border-radius: 6px;
+  border: 2px solid var(--brand-orange);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.15s ease;
+}
+
+.btn-brand-cta:hover,
+.btn-brand-cta:focus {
+  background-color: #dc6211;
+  border-color: #dc6211;
+  color: #FFFFFF;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-brand-cta .btn-brand-cta__icon {
+  font-size: 1.1rem;
+}
+
+/* ─── Book appointment page ─────────────────────────────────── */
+.book-appointment__calendly {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+}
+
+.service-details__content p.text-center a {
+  border-bottom: none;
+}
+
+/* ─── 11. Footer — 30% ─────────────────────────────────────── */
+.site-footer-two {
+  background-color: var(--brand-navy);
+}
+
+/* ─── 12. Global interactive hover states — 10% accent ─────── */
+.main-menu-two__contact-list li .text p a:hover,
+.footer-widget-two__contact li .content p a:hover,
+.footer-widget-two__link li a:hover {
+  color: var(--brand-orange);
+}
+
+/* Sticky nav inherits navy */
+.stricky-header.main-menu-two {
+  background-color: var(--brand-navy);
+}

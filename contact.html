@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
@@ -742,38 +742,38 @@
 
             if (!name) {
                 errors.push('Your Name is required');
-                document.querySelector('input[name="name"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="name"]').style.borderColor = '#F97316';
             } else {
                 document.querySelector('input[name="name"]').style.borderColor = '';
             }
 
             if (!email) {
                 errors.push('Your Email is required');
-                document.querySelector('input[name="email"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="email"]').style.borderColor = '#F97316';
             } else if (!isValidEmail(email)) {
                 errors.push('Please enter a valid email address');
-                document.querySelector('input[name="email"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="email"]').style.borderColor = '#F97316';
             } else {
                 document.querySelector('input[name="email"]').style.borderColor = '';
             }
 
             if (!phone) {
                 errors.push('Phone Number is required');
-                document.querySelector('input[name="phone"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="phone"]').style.borderColor = '#F97316';
             } else {
                 document.querySelector('input[name="phone"]').style.borderColor = '';
             }
 
             if (!serviceType) {
                 errors.push('Service Type is required');
-                document.querySelector('input[name="service_type"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="service_type"]').style.borderColor = '#F97316';
             } else {
                 document.querySelector('input[name="service_type"]').style.borderColor = '';
             }
 
             if (!appointmentDate) {
                 errors.push('Appointment Date and Time is required');
-                document.querySelector('input[name="appointment_date"]').style.borderColor = '#dc3545';
+                document.querySelector('input[name="appointment_date"]').style.borderColor = '#F97316';
             } else {
                 document.querySelector('input[name="appointment_date"]').style.borderColor = '';
             }

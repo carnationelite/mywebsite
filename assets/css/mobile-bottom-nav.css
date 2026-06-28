@@ -31,19 +31,19 @@
 }
 
 .mobile-bottom-nav a.active {
-    color: #d90202;
+    color: #F97316;
 }
 
 .mobile-bottom-nav a.active i {
-    color: #d90202;
+    color: #F97316;
 }
 
 .mobile-bottom-nav a:hover {
-    color: #d90202;
+    color: #F97316;
 }
 
 .mobile-bottom-nav a:hover i {
-    color: #d90202;
+    color: #F97316;
 }
 
 @media (max-width: 767px) {
