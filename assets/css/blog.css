@@ -282,6 +282,101 @@ body,
   font-size: 1.1rem;
 }
 
+/* ─── 13. Callout / Case-Study boxes ───────────────────────── */
+.blog-callout {
+  border-left: 4px solid var(--brand-orange);
+  background-color: #FFF7ED;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.blog-callout__label {
+  display: inline-block;
+  background-color: var(--brand-orange);
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+  line-height: 1;
+}
+
+.blog-callout p {
+  margin-bottom: 0 !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.75 !important;
+  color: var(--brand-navy) !important;
+}
+
+.blog-callout--warning {
+  border-left-color: #DC2626;
+  background-color: #FEF2F2;
+}
+
+.blog-callout--warning .blog-callout__label {
+  background-color: #DC2626;
+}
+
+.blog-callout--warning p {
+  font-weight: 600 !important;
+}
+
+/* ─── 14. Data tables ───────────────────────────────────────── */
+.blog-table-wrap {
+  overflow-x: auto;
+  margin: 1.75rem 0 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.blog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.blog-table thead tr {
+  background-color: var(--brand-navy);
+}
+
+.blog-table thead th {
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.blog-table tbody tr:nth-child(odd) {
+  background-color: #F8FAFC;
+}
+
+.blog-table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.blog-table tbody tr:hover {
+  background-color: #FFF7ED;
+}
+
+.blog-table td {
+  color: var(--brand-navy);
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+  line-height: 1.55;
+  vertical-align: top;
+}
+
+.blog-table td:first-child {
+  font-weight: 600;
+}
+
 /* ─── Book appointment page ─────────────────────────────────── */
 .book-appointment__calendly {
   margin-top: 2rem;
