@@ -278,6 +278,7 @@ def navbar(depth=1):
                         <li><a href="{rel}about.html">About Us</a></li>
                         <li><a href="{rel}services.html">Services</a></li>
                         <li><a href="{rel}carsales.html">Car Sales</a></li>
+                        <li><a href="{rel}blog/">Blog</a></li>
                         <li><a href="{rel}contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -319,6 +320,7 @@ def footer(depth=1):
                             <li><a href="{rel}services.html">Services</a></li>
                             <li><a href="{rel}specials.html">Specials</a></li>
                             <li><a href="{rel}carsales.html">Car Sales</a></li>
+                            <li><a href="{rel}blog/">Blog</a></li>
                             <li><a href="{rel}contact.html">Contact</a></li>
                         </ul>
                     </div>
