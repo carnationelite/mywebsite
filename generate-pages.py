@@ -166,6 +166,190 @@ SPECIALS = [
 
 # ── TEMPLATE PARTS ────────────────────────────────────────────────────────────
 
+
+# ── RELATED BLOG POSTS (shown under the FAQ on service and vehicle pages) ────
+BLOG_TITLES = {
+    "why-are-my-brakes-squeaking.html": "Why Are My Brakes Squeaking or Grinding?",
+    "how-long-do-brake-pads-last.html": "How Long Do Brake Pads and Rotors Last in Dallas Traffic?",
+    "what-does-a-car-diagnostic-test-check.html": "What Does a Car Diagnostic Test Actually Check?",
+    "check-engine-light-causes.html": "Check Engine Light On? 15 Common Causes and What They Mean",
+    "check-engine-light-repair-cost.html": "How Much Does It Cost to Fix a Check Engine Light in Dallas?",
+    "car-ac-blowing-hot-air.html": "Car A/C Blowing Hot Air? 8 Common Causes and Fixes",
+    "car-maintenance-schedule-texas-heat.html": "Car Maintenance Schedule for Texas Heat: What's Due and When",
+    "car-wont-start.html": "Car Won't Start? What to Check Before You Call a Tow",
+    "auto-repair-cost-dallas.html": "How Much Does Auto Repair Cost in Dallas? 2026 Guide",
+    "texas-vehicle-inspection-rules-dallas.html": "Do You Still Need a Car Inspection in Texas? Dallas Rules for 2026",
+    "used-car-inspection-checklist.html": "Used Car Buying Checklist: What to Check Before You Buy",
+    "fleet-preventive-maintenance-checklist.html": "Fleet Preventive Maintenance Checklist for Dallas Businesses",
+    "common-bmw-problems.html": "Common BMW Problems We See in Dallas",
+    "common-mercedes-benz-problems.html": "Common Mercedes-Benz Problems We See in Dallas",
+    "common-audi-problems.html": "Common Audi Problems We See in Dallas",
+    "common-lexus-problems.html": "Common Lexus Problems We See in Dallas",
+    "common-toyota-problems.html": "Common Toyota Problems We See in Dallas",
+    "common-honda-problems.html": "Common Honda Problems We See in Dallas",
+    "common-ford-problems.html": "Common Ford Problems We See in Dallas",
+    "common-chevy-problems.html": "Common Chevy Problems We See in Dallas",
+    "common-porsche-problems.html": "Common Porsche Problems We See in Dallas"
+}
+
+RELATED_POSTS = {
+    "brake-repair-service-dallas.html": [
+        "why-are-my-brakes-squeaking.html",
+        "how-long-do-brake-pads-last.html"
+    ],
+    "engine-diagnostics-repair-dallas.html": [
+        "what-does-a-car-diagnostic-test-check.html",
+        "check-engine-light-causes.html",
+        "check-engine-light-repair-cost.html"
+    ],
+    "ac-heat-repair-dallas.html": [
+        "car-ac-blowing-hot-air.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "battery-replacement-dallas.html": [
+        "car-wont-start.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "oil-change-dallas.html": [
+        "car-maintenance-schedule-texas-heat.html",
+        "auto-repair-cost-dallas.html"
+    ],
+    "vehicle-inspection-dallas.html": [
+        "texas-vehicle-inspection-rules-dallas.html",
+        "used-car-inspection-checklist.html"
+    ],
+    "fleet-services-dallas.html": [
+        "fleet-preventive-maintenance-checklist.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "roadside-assistance-dallas.html": [
+        "car-wont-start.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "electrical-repair-dallas.html": [
+        "car-wont-start.html",
+        "what-does-a-car-diagnostic-test-check.html"
+    ],
+    "transmission-repair-dallas.html": [
+        "what-does-a-car-diagnostic-test-check.html",
+        "auto-repair-cost-dallas.html"
+    ],
+    "steering-suspension-repair-dallas.html": [
+        "used-car-inspection-checklist.html",
+        "auto-repair-cost-dallas.html"
+    ],
+    "hybrid-ev-repair-dallas.html": [
+        "common-toyota-problems.html",
+        "common-lexus-problems.html"
+    ],
+    "honda-repair-dallas.html": [
+        "common-honda-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "audi-repair-dallas.html": [
+        "common-audi-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "jeep-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "dodge-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "bmw-repair-dallas.html": [
+        "common-bmw-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "toyota-repair-dallas.html": [
+        "common-toyota-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "lexus-repair-dallas.html": [
+        "common-lexus-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "ram-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "subaru-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "ford-repair-dallas.html": [
+        "common-ford-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "acura-repair-dallas.html": [
+        "common-honda-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "volkswagen-repair-dallas.html": [
+        "common-audi-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "gmc-repair-dallas.html": [
+        "common-chevy-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "nissan-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "infiniti-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "chevrolet-repair-dallas.html": [
+        "common-chevy-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "mazda-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "hyundai-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "mercedes-benz-repair-dallas.html": [
+        "common-mercedes-benz-problems.html",
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ],
+    "kia-repair-dallas.html": [
+        "check-engine-light-causes.html",
+        "car-maintenance-schedule-texas-heat.html"
+    ]
+}
+
+
+def related_html(filename):
+    import html as _html
+    slugs = RELATED_POSTS.get(filename, [])
+    if not slugs:
+        return ""
+    items = "".join(
+        f'<li style="padding:8px 0;border-bottom:1px solid #eee;"><a href="../blog/{s}" style="color:#0F172A;font-weight:600;text-decoration:none;">{_html.escape(BLOG_TITLES[s])}</a></li>'
+        for s in slugs)
+    return f"""                    <div class="related-questions" style="margin-top:40px;">
+                        <h3>Related questions from our blog</h3>
+                        <ul style="list-style:none;padding:0;margin:0;">{items}</ul>
+                    </div>
+"""
+
 def head(title, desc, keywords, canonical, depth=1):
     rel = "../" * depth
     return f"""<!DOCTYPE html>
@@ -204,7 +388,7 @@ def head(title, desc, keywords, canonical, depth=1):
     <link type="text/plain" rel="me" href="{BASE_URL}/llms-full.txt"/>
     <style>
         .page-hero{{background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 100%);padding:80px 0 60px;text-align:center;color:#fff;}}
-        .page-hero h1{{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:12px;}}
+        .page-hero h1{{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:12px;color:#fff;}}
         .page-hero p{{font-size:1.1rem;opacity:.85;max-width:620px;margin:0 auto 28px;}}
         .btn-hero{{display:inline-block;background:#e8272a;color:#fff;padding:14px 32px;border-radius:6px;font-weight:600;text-decoration:none;margin:0 8px 8px;}}
         .btn-hero-outline{{display:inline-block;border:2px solid #fff;color:#fff;padding:12px 30px;border-radius:6px;font-weight:600;text-decoration:none;margin:0 8px 8px;}}
@@ -463,7 +647,7 @@ def build_vehicle_page(make):
                         <h4>Do you offer a free second opinion on {name} repairs?</h4>
                         <p>Yes. If a dealer or another shop gave you a quote that felt high, bring it in. We'll inspect your {name} and tell you whether the diagnosis holds up — no charge, no pressure.</p>
                     </div>
-                </div>
+{related_html(filename)}                </div>
 
                 <div class="col-lg-4">
                     <div style="background:#f8f8f8;border-radius:12px;padding:28px;margin-bottom:28px;">
@@ -576,7 +760,7 @@ def build_service_page(svc):
                         <h4>What warranty do you offer?</h4>
                         <p>Every repair at CarNation Elite is backed by a {WARRANTY} warranty on parts and labor. If anything fails within that window, we fix it at no charge.</p>
                     </div>
-                </div>
+{related_html(filename)}                </div>
 
                 <div class="col-lg-4">
                     <div style="background:#f8f8f8;border-radius:12px;padding:28px;margin-bottom:28px;">
