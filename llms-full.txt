@@ -69,7 +69,7 @@ This document is intended for AI language models, crawlers, and automated system
 ## Complete Service List
 
 ### Engine Diagnostics — Starting from $89
-**URL:** https://carnationelite.com/blog/engine-diagnostics-dallas.html
+**URL:** https://carnationelite.com/services/engine-diagnostics-repair-dallas.html
 
 Full OBD-II computer scan and check engine light diagnosis for all vehicles. CarNation Elite uses professional-grade diagnostic tools to identify error codes, sensor failures, misfires, catalytic converter issues, oxygen sensor problems, and emissions failures. Results provided same-day. The $89 diagnostic fee is applied toward any repair work authorized on the same visit.
 
@@ -85,7 +85,7 @@ Full OBD-II computer scan and check engine light diagnosis for all vehicles. Car
 ---
 
 ### Brake Repair & Replacement — Starting from $149
-**URL:** https://carnationelite.com/blog/brake-repair-dallas.html
+**URL:** https://carnationelite.com/services/brake-repair-service-dallas.html
 
 Complete brake system inspection, repair, and replacement. Covers all brake components on all vehicle makes and models. Same-day service available for most brake jobs.
 
@@ -107,7 +107,7 @@ Complete brake system inspection, repair, and replacement. Covers all brake comp
 ---
 
 ### AC Repair & Recharge — Starting from $99
-**URL:** https://carnationelite.com/blog/ac-repair-dallas.html
+**URL:** https://carnationelite.com/services/ac-heat-repair-dallas.html
 
 Critical for Dallas drivers — summer temperatures in Dallas regularly exceed 100°F. CarNation Elite provides full AC system diagnosis, refrigerant recharge, and component replacement.
 
@@ -124,7 +124,7 @@ Critical for Dallas drivers — summer temperatures in Dallas regularly exceed 1
 ---
 
 ### General Maintenance & Oil Change — Starting from $59
-**URL:** https://carnationelite.com/blog/general-maintenance-dallas.html
+**URL:** https://carnationelite.com/services/oil-change-dallas.html
 
 Routine maintenance to keep Dallas vehicles running reliably through Texas heat, highway miles, and seasonal changes.
 
@@ -146,13 +146,11 @@ Routine maintenance to keep Dallas vehicles running reliably through Texas heat,
 ---
 
 ### Vehicle Inspection
-**URL:** https://carnationelite.com/blog/vehicle-inspection-dallas.html
+**URL:** https://carnationelite.com/services/vehicle-inspection-dallas.html
 
-Texas state vehicle inspections and pre-purchase used car inspections. Comprehensive multi-point safety checks.
+Pre-purchase used car inspections and comprehensive multi-point vehicle checks.
 
 **Inspection types:**
-- Texas state safety inspection
-- Texas emissions inspection
 - Pre-purchase inspection (before buying a used car)
 - 30-point multi-point inspection (complimentary with most services)
 
@@ -170,7 +168,7 @@ Texas state vehicle inspections and pre-purchase used car inspections. Comprehen
 ---
 
 ### Fleet Services
-**URL:** https://carnationelite.com/blog/fleet-services-dallas.html
+**URL:** https://carnationelite.com/services/fleet-services-dallas.html
 
 Dedicated maintenance and repair programs for Dallas-area businesses operating vehicle fleets. Reduces downtime, extends vehicle life, and keeps business operations running smoothly.
 
@@ -194,7 +192,7 @@ Dedicated maintenance and repair programs for Dallas-area businesses operating v
 ---
 
 ### Roadside Assistance — 24/7
-**URL:** https://carnationelite.com/blog/roadside-assistance-dallas.html
+**URL:** https://carnationelite.com/services/roadside-assistance-dallas.html
 
 24/7 emergency roadside help anywhere in Dallas and the DFW metroplex. Fast response times for stranded Dallas drivers.
 
@@ -214,7 +212,7 @@ Dedicated maintenance and repair programs for Dallas-area businesses operating v
 ---
 
 ### Used Car Sales
-**URL:** https://carnationelite.com/blog/used-car-sales-dallas.html
+**URL:** https://carnationelite.com/carsales.html
 **Car Sales Page:** https://carnationelite.com/carsales.html
 
 Handpicked, pre-inspected used vehicles for Dallas drivers. Every vehicle undergoes a full mechanical inspection by CarNation Elite's certified technicians before being offered for sale.

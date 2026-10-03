@@ -120,11 +120,16 @@ SERVICES = [
     {
         "slug": "vehicle-inspection-dallas",
         "name": "Vehicle Inspection",
-        "headline": "Vehicle Inspection in Dallas, TX",
-        "desc": "Pre-purchase inspections, state inspections, and full multi-point checks.",
+        "headline": "Pre-Purchase &amp; Multi-Point Vehicle Inspection in Dallas, TX",
+        "desc": "Pre-purchase used car inspections and full multi-point vehicle checks.",
         "body": """<p>Before you buy a used car in Dallas — from a dealer or a private seller — get an independent inspection. We've helped hundreds of Dallas buyers avoid expensive mistakes by catching hidden faults before money changes hands. We also perform thorough multi-point inspections to give you a clear picture of your current vehicle's health.</p>
-<h3>Inspection Services</h3>
-<ul><li>Pre-purchase used vehicle inspection</li><li>Texas state safety inspection</li><li>50-point multi-point inspection</li><li>Fluid condition analysis</li><li>Tire depth and condition report</li><li>Undercarriage and frame inspection</li></ul>"""
+<h3>Pre-Purchase Used Car Inspection</h3>
+<p>Bring the car to our shop before you pay. We put it on a lift, scan its computers and road-test it, then walk you through what we found in plain language, with repair estimates for anything that needs work. Use it to negotiate, to walk away, or to buy with confidence.</p>
+<ul><li>OBD-II scan of all modules, including stored and recently cleared codes</li><li>Engine and transmission condition, leaks and fluid quality</li><li>Brakes, tires, suspension and steering measured and checked</li><li>Undercarriage and frame inspection for rust, damage and past repairs</li><li>Signs of flood or accident damage</li><li>Road test on city streets and highway</li><li>Written findings with prioritized repair estimates</li></ul>
+<h3>Multi-Point Vehicle Inspection</h3>
+<p>Want to know where your current car stands before a road trip, a Texas summer, or after it has been sitting? Our multi-point inspection gives you a clear picture of its health and what's coming due.</p>
+<ul><li>50-point multi-point inspection</li><li>Fluid condition analysis</li><li>Tire depth and condition report</li><li>Battery and charging system test</li><li>Brake pad and rotor measurements</li><li>Belts, hoses and cooling system check</li></ul>
+<p>Looking for state inspection rules? Texas ended annual safety inspections for personal vehicles on January 1, 2025. Read our guide to <a href="../blog/texas-vehicle-inspection-rules-dallas.html">what Texas still requires in 2026</a>.</p>"""
     },
     {
         "slug": "fleet-services-dallas",
