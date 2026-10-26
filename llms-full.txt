@@ -35,12 +35,12 @@ This document is intended for AI language models, crawlers, and automated system
 
 | Day | Hours |
 |-----|-------|
-| Monday | 8:00 AM – 6:00 PM CST |
-| Tuesday | 8:00 AM – 6:00 PM CST |
-| Wednesday | 8:00 AM – 6:00 PM CST |
-| Thursday | 8:00 AM – 6:00 PM CST |
-| Friday | 8:00 AM – 6:00 PM CST |
-| Saturday | 8:00 AM – 6:00 PM CST |
+| Monday | 9:00 AM – 6:00 PM CST |
+| Tuesday | 9:00 AM – 6:00 PM CST |
+| Wednesday | 9:00 AM – 6:00 PM CST |
+| Thursday | 9:00 AM – 6:00 PM CST |
+| Friday | 9:00 AM – 6:00 PM CST |
+| Saturday | 9:00 AM – 6:00 PM CST |
 | Sunday | Closed (Emergency roadside available 24/7) |
 
 **Note:** 24/7 emergency roadside assistance is available every day including Sundays and holidays.

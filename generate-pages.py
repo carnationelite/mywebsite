@@ -428,7 +428,7 @@ SCHEMA_BUSINESS = """{
     "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
     "address": {"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"},
     "geo": {"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044},
-    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}],
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}],
     "priceRange": "$$",
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}
 }"""
@@ -447,7 +447,7 @@ def navbar(depth=1):
             <div class="main-menu-two__top-right">
                 <div class="main-menu-two__top-time">
                     <span class="fas fa-clock"></span>
-                    <p class="main-menu-two__top-text">Mon - Sat: 08:00 - 18:00 &nbsp;|&nbsp; 24/7 Roadside</p>
+                    <p class="main-menu-two__top-text">Mon - Sat: 09:00 - 18:00 &nbsp;|&nbsp; 24/7 Roadside</p>
                 </div>
             </div>
         </div>
@@ -577,7 +577,7 @@ def build_vehicle_page(make):
     "address": {{"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"}},
     "geo": {{"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044}},
     "priceRange": "$$",
-    "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}}],
+    "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "serviceType": ["{name} Repair","Oil Change","Brake Repair","Engine Diagnostics","AC Repair","Transmission Repair"],
     "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}}
 }}"""
@@ -660,7 +660,7 @@ def build_vehicle_page(make):
                         <p><strong>Phone:</strong> <a href="{PHONE_HREF}">(214) 597-4922</a></p>
                         <p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p>
                         <p><strong>Address:</strong> 13610 Floyd Circle, Dallas, TX 75243</p>
-                        <p><strong>Hours:</strong> Mon–Sat 8am–6pm<br>24/7 Roadside Assistance</p>
+                        <p><strong>Hours:</strong> Mon–Sat 9am–6pm<br>24/7 Roadside Assistance</p>
                         <a href="{CALENDLY}" class="btn-hero" style="display:block;text-align:center;margin-top:16px;" target="_blank">Book Appointment</a>
                     </div>
                     <div style="background:#1a1a2e;border-radius:12px;padding:28px;color:#fff;margin-bottom:28px;">
@@ -718,7 +718,7 @@ def build_service_page(svc):
     "address": {{"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"}},
     "geo": {{"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044}},
     "priceRange": "$$",
-    "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}}],
+    "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "hasOfferCatalog": {{"@type":"OfferCatalog","name":"{name} Dallas","itemListElement":[{{"@type":"Offer","itemOffered":{{"@type":"Service","name":"{name}","areaServed":"Dallas, TX"}}}}]}},
     "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}}
 }}"""
@@ -773,7 +773,7 @@ def build_service_page(svc):
                         <p><strong>Phone:</strong> <a href="{PHONE_HREF}">(214) 597-4922</a></p>
                         <p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p>
                         <p><strong>Address:</strong> 13610 Floyd Circle, Dallas, TX 75243</p>
-                        <p><strong>Hours:</strong> Mon–Sat 8am–6pm<br>24/7 Roadside Assistance</p>
+                        <p><strong>Hours:</strong> Mon–Sat 9am–6pm<br>24/7 Roadside Assistance</p>
                         <a href="{CALENDLY}" class="btn-hero" style="display:block;text-align:center;margin-top:16px;" target="_blank">Book Appointment</a>
                     </div>
                     <div style="background:#1a1a2e;border-radius:12px;padding:28px;color:#fff;">
