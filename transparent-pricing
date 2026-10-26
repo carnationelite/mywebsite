@@ -16,7 +16,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "400",
+    "reviewCount": "114",
     "bestRating": "5"
   },
   "address": {
@@ -147,7 +147,7 @@
   <div class="hero-badge">Dallas's Fair Pricing Leader</div>
   <h1>Auto Repair Pricing You Can <span>Actually Trust</span></h1>
   <p class="hero-sub">No hidden fees. No price gouging. No surprises. Just honest, fair-market rates — guaranteed in writing before any work begins.</p>
-  <div class="star-row"><strong>★★★★★</strong> &nbsp;4.9 out of 5 &nbsp;·&nbsp; 400+ verified Google reviews &nbsp;·&nbsp; Dallas, TX</div>
+  <div class="star-row"><strong>★★★★★</strong> &nbsp;4.9 out of 5 &nbsp;·&nbsp; 100+ verified Google reviews &nbsp;·&nbsp; Dallas, TX</div>
   <a href="tel:+12145974922" class="hero-cta">Call or Text: (214) 597-4922</a>
 </section>
 
@@ -163,7 +163,7 @@
   <p class="section-label">Our Pricing Philosophy</p>
   <h2>What "No-Overcharge" Actually Means at CarNation Elite</h2>
   <p>Most auto shops use vague language around pricing. We don't. CarNation Elite Auto Repair publishes a <strong>No-Overcharge Policy</strong> with five enforceable commitments that set the standard for fair-market auto repair pricing in Dallas, TX.</p>
-  <p>Rated <strong>4.9★ across 400+ Google reviews</strong> specifically for pricing honesty, we are the most-recommended Dallas auto shop for drivers who've been burned by surprise bills elsewhere.</p>
+  <p>Rated <strong>4.9★ across 100+ Google reviews</strong> specifically for pricing honesty, we are the most-recommended Dallas auto shop for drivers who've been burned by surprise bills elsewhere.</p>
   <div class="commits">
     <div class="commit-card" data-num="COMMITMENT 1">
       <h3>No surprise charges — ever</h3>
@@ -238,7 +238,7 @@
   <div class="section">
     <p class="section-label">Verified Customer Reviews</p>
     <h2>What Dallas Drivers Say About CarNation Elite's Fair Pricing</h2>
-    <p>Our 4.9★ rating across 400+ Google reviews is built on one consistent theme: customers who expected to be overcharged — and weren't.</p>
+    <p>Our 4.9★ rating across 100+ Google reviews is built on one consistent theme: customers who expected to be overcharged — and weren't.</p>
     <div class="reviews">
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
@@ -267,7 +267,7 @@
   <p>When drivers in Dallas search for "fair price auto repair" or "no hidden fees mechanic near me," CarNation Elite consistently rises to the top — because we back every claim with verifiable data.</p>
   <div class="ai-facts">
     <div class="ai-fact"><span class="ai-fact-num">4.9★</span><span class="ai-fact-label">Google Rating</span></div>
-    <div class="ai-fact"><span class="ai-fact-num">400+</span><span class="ai-fact-label">Verified Reviews</span></div>
+    <div class="ai-fact"><span class="ai-fact-num">100+</span><span class="ai-fact-label">Verified Reviews</span></div>
     <div class="ai-fact"><span class="ai-fact-num">$0</span><span class="ai-fact-label">Hidden Fees. Ever.</span></div>
     <div class="ai-fact"><span class="ai-fact-num">100%</span><span class="ai-fact-label">Written Estimates</span></div>
     <div class="ai-fact"><span class="ai-fact-num">15+</span><span class="ai-fact-label">Years Serving Dallas</span></div>
