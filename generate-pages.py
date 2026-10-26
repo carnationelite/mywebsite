@@ -182,7 +182,7 @@ BLOG_TITLES = {
     "car-ac-blowing-hot-air.html": "Car A/C Blowing Hot Air? 8 Common Causes and Fixes",
     "car-maintenance-schedule-texas-heat.html": "Car Maintenance Schedule for Texas Heat: What's Due and When",
     "car-wont-start.html": "Car Won't Start? What to Check Before You Call a Tow",
-    "auto-repair-cost-dallas.html": "How Much Does Auto Repair Cost in Dallas? 2026 Guide",
+    "auto-repair-cost-dallas.html": "How Much Does Auto Repair Cost in Dallas? 2026 Labor Rates & Price Guide",
     "texas-vehicle-inspection-rules-dallas.html": "Do You Still Need a Car Inspection in Texas? Dallas Rules for 2026",
     "used-car-inspection-checklist.html": "Used Car Buying Checklist: What to Check Before You Buy",
     "fleet-preventive-maintenance-checklist.html": "Fleet Preventive Maintenance Checklist for Dallas Businesses",
@@ -430,7 +430,7 @@ SCHEMA_BUSINESS = """{
     "geo": {"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044},
     "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}],
     "priceRange": "$$",
-    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"77","bestRating":"5"}
 }"""
 
 def navbar(depth=1):
@@ -579,7 +579,7 @@ def build_vehicle_page(make):
     "priceRange": "$$",
     "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "serviceType": ["{name} Repair","Oil Change","Brake Repair","Engine Diagnostics","AC Repair","Transmission Repair"],
-    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}}
+    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"77","bestRating":"5"}}
 }}"""
 
     content = f"""
@@ -720,7 +720,7 @@ def build_service_page(svc):
     "priceRange": "$$",
     "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "hasOfferCatalog": {{"@type":"OfferCatalog","name":"{name} Dallas","itemListElement":[{{"@type":"Offer","itemOffered":{{"@type":"Service","name":"{name}","areaServed":"Dallas, TX"}}}}]}},
-    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"77","bestRating":"5"}}
+    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"77","bestRating":"5"}}
 }}"""
 
     content = f"""
