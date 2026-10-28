@@ -9,7 +9,7 @@ import os, json
 from datetime import date
 
 BASE_URL = "https://carnationelite.com"
-PHONE = "+1 (214) 597 4922"
+PHONE = "+1 (214) 597-4922"
 PHONE_HREF = "tel:+12145974922"
 EMAIL = "service@carnationelite.com"
 ADDRESS = "13610 Floyd Circle, Dallas, Texas"
@@ -531,7 +531,7 @@ def footer(depth=1):
                     <div class="footer-widget-two__column footer-widget-two__newsletter">
                         <div class="footer-widget-two__title-box"><h3 class="footer-widget-two__newsletter-title">Contact Us</h3></div>
                         <ul class="footer-widget-two__contact list-unstyled">
-                            <li><div class="icon"><span class="icon-phone-call"></span></div><div class="content"><h5>Phone</h5><p><a href="{PHONE_HREF}">(214) 597-4922</a></p></div></li>
+                            <li><div class="icon"><span class="icon-phone-call"></span></div><div class="content"><h5>Phone</h5><p><a href="{PHONE_HREF}">+1 (214) 597-4922</a></p></div></li>
                             <li><div class="icon"><span class="icon-location"></span></div><div class="content"><h5>Location</h5><p>13610 Floyd Circle, Dallas, TX 75243</p></div></li>
                             <li><div class="icon"><span class="icon-email"></span></div><div class="content"><h5>Email</h5><p><a href="mailto:{EMAIL}">{EMAIL}</a></p></div></li>
                         </ul>
@@ -563,7 +563,7 @@ def build_vehicle_page(make):
     filename = f"{slug}-repair-dallas.html"
     canonical = f"{BASE_URL}/vehicles/{filename}"
     title = f"{name} Repair Dallas TX | CarNation Elite Auto Repair"
-    desc = f"Expert {name} repair in Dallas, TX. CarNation Elite services {models} and all {name} models. Lower than dealer pricing, 24/7 roadside, {WARRANTY} warranty. Call (214) 597-4922."
+    desc = f"Expert {name} repair in Dallas, TX. CarNation Elite services {models} and all {name} models. Lower than dealer pricing, 24/7 roadside, {WARRANTY} warranty. Call +1 (214) 597-4922."
     keywords = f"{name.lower()} repair Dallas, {name.lower()} mechanic Dallas TX, {name.lower()} service Dallas, {name.lower()} auto repair near me, Dallas {name.lower()} shop"
 
     schema = f"""{{
@@ -588,7 +588,7 @@ def build_vehicle_page(make):
             <h1>{name} Repair in Dallas, TX</h1>
             <p>Expert {name} service for {models}. Dealer-grade diagnostics at independent shop prices — with 24/7 roadside and a {WARRANTY} warranty on every repair.</p>
             <a href="{CALENDLY}" class="btn-hero" target="_blank">Book Appointment</a>
-            <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+            <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
         </div>
     </div>
 
@@ -632,13 +632,13 @@ def build_vehicle_page(make):
                         <h2>Ready to Book Your {name} Service?</h2>
                         <p>Online booking takes 60 seconds. Or call us and we'll get you in today.</p>
                         <a href="{CALENDLY}" class="btn-hero" target="_blank">Book Online</a>
-                        <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+                        <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
                     </div>
 
                     <h3>Frequently Asked Questions — {name} Repair Dallas</h3>
                     <div class="faq-item">
                         <h4>How much does {name} repair cost in Dallas?</h4>
-                        <p>Pricing depends on the model, year, and what needs fixing. Call us at (214) 597-4922 with your vehicle info and the issue — we'll quote diagnostic time upfront and won't add time without your approval. We're consistently 20–40% below dealer rates on most repairs.</p>
+                        <p>Pricing depends on the model, year, and what needs fixing. Call us at +1 (214) 597-4922 with your vehicle info and the issue — we'll quote diagnostic time upfront and won't add time without your approval. We're consistently 20–40% below dealer rates on most repairs.</p>
                     </div>
                     <div class="faq-item">
                         <h4>Will using an independent shop void my {name} warranty?</h4>
@@ -657,7 +657,7 @@ def build_vehicle_page(make):
                 <div class="col-lg-4">
                     <div style="background:#f8f8f8;border-radius:12px;padding:28px;margin-bottom:28px;">
                         <h3 style="margin-top:0;">Quick Contact</h3>
-                        <p><strong>Phone:</strong> <a href="{PHONE_HREF}">(214) 597-4922</a></p>
+                        <p><strong>Phone:</strong> <a href="{PHONE_HREF}">+1 (214) 597-4922</a></p>
                         <p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p>
                         <p><strong>Address:</strong> 13610 Floyd Circle, Dallas, TX 75243</p>
                         <p><strong>Hours:</strong> Mon–Sat 9am–6pm<br>24/7 Roadside Assistance</p>
@@ -704,7 +704,7 @@ def build_service_page(svc):
     filename = f"{slug}.html"
     canonical = f"{BASE_URL}/services/{filename}"
     title = f"{name} Dallas TX | CarNation Elite Auto Repair"
-    desc = f"{desc_short} CarNation Elite at Floyd Circle, Dallas. {WARRANTY} warranty, lower than dealer pricing, 24/7 roadside. Call (214) 597-4922."
+    desc = f"{desc_short} CarNation Elite at Floyd Circle, Dallas. {WARRANTY} warranty, lower than dealer pricing, 24/7 roadside. Call +1 (214) 597-4922."
     keywords = f"{name.lower()} Dallas, {name.lower()} Dallas TX, auto {name.lower()} near me, car {name.lower()} Dallas, Dallas auto repair"
 
     schema = f"""{{
@@ -729,7 +729,7 @@ def build_service_page(svc):
             <h1>{headline}</h1>
             <p>{desc_short} {WARRANTY} warranty on every repair. Open Mon–Sat + 24/7 roadside.</p>
             <a href="{CALENDLY}" class="btn-hero" target="_blank">Book Appointment</a>
-            <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+            <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
         </div>
     </div>
 
@@ -750,12 +750,12 @@ def build_service_page(svc):
                         <h2>Book Your {name} Appointment</h2>
                         <p>Online booking takes 60 seconds. Same-day service available most days.</p>
                         <a href="{CALENDLY}" class="btn-hero" target="_blank">Book Online</a>
-                        <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+                        <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
                     </div>
                     <h3>Frequently Asked Questions</h3>
                     <div class="faq-item">
                         <h4>How much does {name.lower()} cost in Dallas?</h4>
-                        <p>Pricing varies by vehicle make, model, and exact issue. Call us at (214) 597-4922 — we'll quote upfront with no surprises. We're typically 20–40% below dealer pricing on the same work.</p>
+                        <p>Pricing varies by vehicle make, model, and exact issue. Call us at +1 (214) 597-4922 — we'll quote upfront with no surprises. We're typically 20–40% below dealer pricing on the same work.</p>
                     </div>
                     <div class="faq-item">
                         <h4>Is same-day service available?</h4>
@@ -770,7 +770,7 @@ def build_service_page(svc):
                 <div class="col-lg-4">
                     <div style="background:#f8f8f8;border-radius:12px;padding:28px;margin-bottom:28px;">
                         <h3 style="margin-top:0;">Quick Contact</h3>
-                        <p><strong>Phone:</strong> <a href="{PHONE_HREF}">(214) 597-4922</a></p>
+                        <p><strong>Phone:</strong> <a href="{PHONE_HREF}">+1 (214) 597-4922</a></p>
                         <p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p>
                         <p><strong>Address:</strong> 13610 Floyd Circle, Dallas, TX 75243</p>
                         <p><strong>Hours:</strong> Mon–Sat 9am–6pm<br>24/7 Roadside Assistance</p>
@@ -814,7 +814,7 @@ def build_service_page(svc):
 def build_specials_page():
     canonical = f"{BASE_URL}/specials.html"
     title = "Auto Repair Specials & Deals | CarNation Elite Dallas TX"
-    desc = "Current auto repair specials and deals from CarNation Elite in Dallas, TX. Oil change from $49.99, free multi-point inspection, $30 off brakes, and more. Call (214) 597-4922."
+    desc = "Current auto repair specials and deals from CarNation Elite in Dallas, TX. Oil change from $49.99, free multi-point inspection, $30 off brakes, and more. Call +1 (214) 597-4922."
     keywords = "auto repair deals Dallas, car repair specials Dallas TX, oil change coupon Dallas, brake repair discount Dallas, CarNation Elite specials"
 
     cards = ""
@@ -837,7 +837,7 @@ def build_specials_page():
             <h1>Auto Repair Specials — Dallas, TX</h1>
             <p>Real deals on the services Dallas drivers need most. No hidden fees, no bait-and-switch. Book online or call to lock in your price.</p>
             <a href="{CALENDLY}" class="btn-hero" target="_blank">Book an Appointment</a>
-            <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+            <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
         </div>
     </div>
 
@@ -862,7 +862,7 @@ def build_specials_page():
                 <h2>Questions About a Special?</h2>
                 <p>Call us and we'll walk you through pricing before you commit to anything.</p>
                 <a href="{CALENDLY}" class="btn-hero" target="_blank">Book Online</a>
-                <a href="{PHONE_HREF}" class="btn-hero-outline">Call (214) 597-4922</a>
+                <a href="{PHONE_HREF}" class="btn-hero-outline">Call +1 (214) 597-4922</a>
             </div>
         </div>
     </section>

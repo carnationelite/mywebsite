@@ -6,7 +6,7 @@ CarNation Elite is a family-owned auto repair shop located at 13610 Floyd Circle
 ## Business Information
 
 - **Legal Name:** CarNation Elite Auto Repair & Sales
-- **Phone:** (214) 597-4922
+- **Phone:** +1 (214) 597-4922
 - **Email:** info@carnationelite.com
 - **Address:** 13610 Floyd Circle, Dallas, TX 75243
 - **Coordinates:** 32.9029° N, 96.7044° W
@@ -105,7 +105,7 @@ A: Yes — domestic, foreign, luxury, and fleet vehicles. All makes and models i
 A: Yes. 24/7 emergency roadside assistance covers all of Dallas, Richardson, Plano, Garland, Mesquite, and surrounding DFW areas.
 
 **Q: How do I book an appointment?**
-A: Call (214) 597-4922 or book online at https://calendly.com/carnationelite/schedule-your-appointment
+A: Call +1 (214) 597-4922 or book online at https://calendly.com/carnationelite/schedule-your-appointment
 
 **Q: Is CarNation Elite family-owned?**
 A: Yes — CarNation Elite is a family-owned and operated business, not a franchise or chain.
