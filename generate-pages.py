@@ -427,10 +427,10 @@ SCHEMA_BUSINESS = """{
     "email": "service@carnationelite.com",
     "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
     "address": {"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"},
-    "geo": {"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044},
+    "geo": {"@type":"GeoCoordinates","latitude": 32.9334396,"longitude": -96.7449699},
     "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}],
     "priceRange": "$$",
-    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"114","bestRating":"5"}
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"113","bestRating":"5"}
 }"""
 
 def navbar(depth=1):
@@ -496,7 +496,7 @@ def footer(depth=1):
                         <div class="site-footer-two__social">
                             <a target="_blank" href="https://www.facebook.com/carnationelite"><i class="icon-facebook-app-symbol"></i></a>
                             <a target="_blank" href="https://www.instagram.com/carnation_elite/"><i class="icon-instagram"></i></a>
-                            <a target="_blank" href="https://twitter.com/carnationelite"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://x.com/carnationelite9"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -575,11 +575,11 @@ def build_vehicle_page(make):
     "telephone": "+1-214-597-4922",
     "email": "service@carnationelite.com",
     "address": {{"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"}},
-    "geo": {{"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044}},
+    "geo": {{"@type":"GeoCoordinates","latitude": 32.9334396,"longitude": -96.7449699}},
     "priceRange": "$$",
     "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "serviceType": ["{name} Repair","Oil Change","Brake Repair","Engine Diagnostics","AC Repair","Transmission Repair"],
-    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"114","bestRating":"5"}}
+    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"113","bestRating":"5"}}
 }}"""
 
     content = f"""
@@ -604,7 +604,7 @@ def build_vehicle_page(make):
             <div class="row">
                 <div class="col-lg-8">
                     <h2>{name} Repair &amp; Maintenance — Floyd Circle, Dallas</h2>
-                    <p>CarNation Elite has been servicing {name} vehicles for Dallas-area drivers for over 15 years. We work on the full {name} lineup — {models} — from routine oil changes and brake jobs to complex engine diagnostics and transmission repair. Every repair comes backed by our {WARRANTY} warranty on parts and labor.</p>
+                    <p>CarNation Elite's technicians bring 10–15 years of hands-on experience servicing {name} vehicles for Dallas-area drivers. We work on the full {name} lineup — {models} — from routine oil changes and brake jobs to complex engine diagnostics and transmission repair. Every repair comes backed by our {WARRANTY} warranty on parts and labor.</p>
 
                     <p>We're located at 13610 Floyd Circle in Northeast Dallas, minutes from Richardson, Lake Highlands, and Garland. Unlike the dealership, you won't wait a week for an appointment or sit in a waiting room for three hours. Most routine {name} services are same-day.</p>
 
@@ -716,11 +716,11 @@ def build_service_page(svc):
     "telephone": "+1-214-597-4922",
     "email": "service@carnationelite.com",
     "address": {{"@type":"PostalAddress","streetAddress":"13610 Floyd Circle","addressLocality":"Dallas","addressRegion":"TX","postalCode":"75243","addressCountry":"US"}},
-    "geo": {{"@type":"GeoCoordinates","latitude":32.9029,"longitude":-96.7044}},
+    "geo": {{"@type":"GeoCoordinates","latitude": 32.9334396,"longitude": -96.7449699}},
     "priceRange": "$$",
     "openingHoursSpecification": [{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}}],
     "hasOfferCatalog": {{"@type":"OfferCatalog","name":"{name} Dallas","itemListElement":[{{"@type":"Offer","itemOffered":{{"@type":"Service","name":"{name}","areaServed":"Dallas, TX"}}}}]}},
-    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"114","bestRating":"5"}}
+    "aggregateRating": {{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"113","bestRating":"5"}}
 }}"""
 
     content = f"""
