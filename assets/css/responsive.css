@@ -788,7 +788,7 @@
         padding: 20px 0 40px;
     }
 
-    .page-header__inner h3 {
+    .page-header__inner h3, .page-header__inner h1 {
         font-size: 25px;
         line-height: 1.3em;
     }

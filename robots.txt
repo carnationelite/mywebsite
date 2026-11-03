@@ -1,4 +1,17 @@
+# Everyone, including all search and AI crawlers, may crawl the whole site
 User-agent: *
+Allow: /
+
+# Named for clarity only; same effect as the rule above
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://carnationelite.com/sitemap.xml
