@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             keywords: ['location', 'address', 'where', 'dallas', 'richardson', 'plano', 'addison', 'place', 'city', 'area'],
-            response: "We are located at 13610 Floyd Circle, Dallas, Texas 75243. We serve North Dallas, Richardson, Plano, and Addison."
+            response: "We are located at 13610 Floyd Circle, Dallas, TX 75243. We serve North Dallas, Richardson, Plano, and Addison."
         },
         {
             keywords: ['contact', 'contact number', 'phone', 'call', 'number', 'mobile', 'cell', 'email', 'mail'],
-            response: "You can reach us at +1 (214) 597-4922 or email info@carnationelite.com."
+            response: "You can reach us at (214) 597-4922 or email info@carnationelite.com."
         },
         {
             keywords: ['website', 'url', 'link', 'site', 'websit', 'online'],
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        return "OK! I've received your inquiry about \"" + userInput + "\". A specialist from CarNation Elite will provide you with specific details shortly. You can also reach us directly at +1 (214) 597-4922 or visit www.carnationelite.com.";
+        return "OK! I've received your inquiry about \"" + userInput + "\". A specialist from CarNation Elite will provide you with specific details shortly. You can also reach us directly at (214) 597-4922 or visit www.carnationelite.com.";
     };
 
     const appendMessage = (sender, text) => {
