@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const knowledgeBase = [
         {
             keywords: ['about', 'who', 'company', 'experience', 'years', 'history', 'professional', 'center'],
-            response: "CarNation Elite is a professional Auto Repair & Service Center in Dallas, TX. We have 10-15 years of hands-on experience and a team of certified technicians providing reliable, honest, and affordable care."
+            response: "CarNation Elite is a professional Auto Repair & Service Center in Dallas, TX. We have 10-15 years of hands-on experience and a team of experienced technicians providing reliable, honest, and affordable care."
         },
         {
             keywords: ['expertise', 'certified', 'mechanic', 'technician', 'diagnostics', 'diagnostic', 'expert'],
-            response: "Our mechanics have over 15 years of experience and handle complex electrical and mechanical repairs that other shops often miss, using advanced diagnostics technology."
+            response: "Our mechanics have 10–15 years of experience and handle complex electrical and mechanical repairs that other shops often miss, using advanced diagnostics technology."
         },
         {
             keywords: ['price', 'cost', 'estimate', 'transparent', 'hidden', 'fee', 'pricing', 'honest'],
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             keywords: ['social', 'social media links', 'social media', 'socila', 'media', 'links', 'facebook', 'instagram', 'instasgram', 'linkedin', 'twitter', 'tiktok', 'x'],
-            response: "Follow us on social media: \n• Facebook: https://www.facebook.com/carnationelite \n• Instagram: https://www.instagram.com/carnation_elite/ \n• LinkedIn: https://www.linkedin.com/company/carnation-elite/ \n• Twitter/X: https://twitter.com/carnationelite \n• TikTok: https://www.tiktok.com/in/about"
+            response: "Follow us on social media: \n• Facebook: https://www.facebook.com/carnationelite \n• Instagram: https://www.instagram.com/carnation_elite/ \n• LinkedIn: https://www.linkedin.com/company/carnation-elite/ \n• Twitter/X: https://x.com/carnationelite9 \n• TikTok: https://www.tiktok.com/in/about"
         },
         {
             keywords: ['status', 'repaired', 'happy', 'customers', 'satisfied', 'stats', 'statistics'],
-            response: "We have repaired 100+ vehicles with 15+ years of experience and maintain 100% happy customers!"
+            response: "We have repaired 100+ vehicles with 10–15 years of experience and maintain 100% happy customers!"
         }
     ];
 
