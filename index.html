@@ -15,10 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarNation Elite — Expert Auto Repair in Dallas, TX | Diagnostics, Brakes, AC & More</title>
     <meta name="description"
-        content="CarNation Elite is Dallas's trusted auto repair specialist. Certified technicians for engine diagnostics, brake repair, AC service, oil changes, fleet service & 24/7 roadside assistance. Transparent pricing. Call +1 (214) 597-4922." />
+        content="CarNation Elite is Dallas's trusted auto repair specialist. Certified technicians for engine diagnostics, brake repair, AC service, oil changes, fleet service & 24/7 roadside assistance. Transparent pricing. Call (214) 597-4922." />
     <meta name="keywords"
         content="auto repair Dallas, car repair Dallas TX, mechanic Dallas, roadside assistance Dallas, used cars Dallas, fleet services Dallas, certified mechanics, 24/7 towing, car maintenance Dallas, vehicle inspection, engine diagnostics, brake repair, AC repair, Dallas auto shop" />
-    <meta name="author" content="CarNation Elite Auto Repair & Sales" />
+    <meta name="author" content="CarNation Elite" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="language" content="English" />
     <meta name="geo.region" content="US-TX" />
@@ -30,11 +30,11 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title"
-        content="CarNation Elite Auto Repair & Sales - Dallas TX | Expert Auto Repair & Used Cars" />
+        content="CarNation Elite - Dallas TX | Expert Auto Repair & Used Cars" />
     <meta property="og:description"
         content="Dallas's premier auto repair and used car dealership. Expert service, certified technicians, 24/7 roadside assistance, fleet maintenance, and quality used cars with transparent pricing." />
     <meta property="og:url" content="https://carnationelite.com/" />
-    <meta property="og:site_name" content="CarNation Elite Auto Repair & Sales" />
+    <meta property="og:site_name" content="CarNation Elite" />
     <meta property="og:image" content="https://carnationelite.com/assets/images/resources/logo-2.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -78,7 +78,7 @@
                 "AutoRepair"
             ],
             "@id": "https://carnationelite.com/#business",
-            "name": "CarNation Elite Auto Repair & Sales",
+            "name": "CarNation Elite",
             "url": "https://carnationelite.com",
             "telephone": "+1-214-597-4922",
             "email": "info@carnationelite.com",
@@ -236,97 +236,22 @@
     <meta http-equiv="Expires" content="0">
 
   <!-- 1. Main Business Schema (AutoRepair) -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AutoRepair",
-  "name": "CarNation Elite Auto Repair",
-  "url": "https://carnationelite.com",
-  "telephone": "+1-214-597-4922",
-  "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "13610 Floyd Circle",
-    "addressLocality": "Dallas",
-    "addressRegion": "TX",
-    "postalCode": "75243",
-    "addressCountry": "US"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "14:00"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 32.9068,
-    "longitude": -96.7336
-  },
-  "sameAs": [
-    "https://www.facebook.com/carnationelite",
-    "https://www.yelp.com/biz/carnation-elite-auto-repair-dallas"
-  ]
-}
-  </script>
 
   <!-- 2. LocalBusiness / Organization Schema (Recommended) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "CarNation Elite Auto Repair & Sales",
-    "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
-    "telephone": "+1-214-597-4922",
-    "email": "info@carnationelite.com",
-    "url": "https://carnationelite.com",
-    "openingHours": "Mo-Sa 09:00-18:00",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "13610 Floyd Circle",
-      "addressLocality": "Dallas",
-      "addressRegion": "TX",
-      "postalCode": "75243",
-      "addressCountry": "US"
-    }
-  }
-  </script>
 
   <!-- 3. Example: Service Schema (for a specific service) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Brake Repair Service",
-    "provider": {
-      "@type": "AutoRepair",
-      "name": "CarNation Elite Auto Repair",
-      "image": "https://carnationelite.com/assets/images/resources/logo-2.png",
-      "telephone": "+1-214-597-4922",
-      "priceRange": "$$",
-      "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "13610 Floyd Circle",
-      "addressLocality": "Dallas",
-      "addressRegion": "TX",
-      "postalCode": "75243",
-      "addressCountry": "US"
-      }
-    },
-    "description": "Expert brake inspection, pad replacement, and rotor service.",
-    "areaServed": "Dallas, TX"
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Brake Repair Service",
+  "provider": {
+    "@id": "https://carnationelite.com/#business"
+  },
+  "description": "Expert brake inspection, pad replacement, and rotor service.",
+  "areaServed": "Dallas, TX"
+}
+</script>
 </head>
 
 <body class="custom-cursor">
@@ -347,7 +272,7 @@
                                 <i class="icon-phone-call"></i>
                             </div>
                             <div class="text">
-                                <p><a href="tel:+12145974922">+1 (214) 597-4922</a></p>
+                                <p><a href="tel:+12145974922">(214) 597-4922</a></p>
                             </div>
                         </li>
                         <li>
@@ -364,11 +289,11 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>13610 Floyd Circle, Dallas, Texas</p>
+                                <p>13610 Floyd Circle, Dallas, TX 75243</p>
                             </div>
                         </li>
                     </ul>
-                    <p class="main-menu-two__top-welcome-text">Welcome to CarNation Elite Auto Repair</p>
+                    <p class="main-menu-two__top-welcome-text">Welcome to CarNation Elite</p>
                     <div class="main-menu-two__top-right">
                         <div class="main-menu-two__top-time">
                             <div class="main-menu-two__top-time-icon">
@@ -399,7 +324,7 @@
                             <div class="main-menu-two__logo">
                                 <a href="index.html"><picture>
   <source srcset="assets/images/resources/logo-2.webp" type="image/webp">
-  <img src="assets/images/resources/logo-2.png" alt="CarNation Elite Auto Repair & Sales logo" width="541" height="476" loading="eager" fetchpriority="high" class="bg-white" style="height: 90px; width: 90px;">
+  <img src="assets/images/resources/logo-2.png" alt="CarNation Elite logo" width="541" height="476" loading="eager" fetchpriority="high" class="bg-white" style="height: 90px; width: 90px;">
 </picture></a>
                             </div>
                         </div>
@@ -488,7 +413,7 @@
                                             <h2 class="main-slider-two__title" style="letter-spacing:-0.5px;line-height:1.2;">Expert Auto Repair<br>&amp; Certified <span>Diagnostics</span><br><span>in Dallas</span>
                                             </h2>
                                             <p class="main-slider-two__text">
-                                                Trusted Dallas auto repair — fast service, expert diagnostics, and transparent pricing. Call +1 (214) 597-4922 or book online today.
+                                                Trusted Dallas auto repair — fast service, expert diagnostics, and transparent pricing. Call (214) 597-4922 or book online today.
                                             </p>
                                             <div class="main-slider-two__btn-and-video-box">
                                                 <div class="main-slider-two__btn-box">
@@ -1604,7 +1529,7 @@
                                 <div class="footer-widget-two__logo">
                                     <a href="index.html"><picture>
   <source srcset="assets/images/resources/logo-2.webp" type="image/webp">
-  <img src="assets/images/resources/logo-2.png" alt="CarNation Elite Auto Repair & Sales logo" width="541" height="476" loading="eager" fetchpriority="high" class="bg-white" style="height: 90px; width: 90px;">
+  <img src="assets/images/resources/logo-2.png" alt="CarNation Elite logo" width="541" height="476" loading="eager" fetchpriority="high" class="bg-white" style="height: 90px; width: 90px;">
 </picture></a>
                                 </div>
                                 <p class="footer-widget-two__about-text">CarNation Elite is Dallas's trusted auto repair specialist — certified technicians, honest pricing, and fast turnarounds. <br> Serving North Dallas, Richardson, Plano, and Addison.</p>
@@ -1669,7 +1594,7 @@
                                         </div>
                                         <div class="content">
                                             <h5>Contact</h5>
-                                            <p><a href="tel:+12145974922">+1 (214) 597-4922</a></p>
+                                            <p><a href="tel:+12145974922">(214) 597-4922</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -1710,8 +1635,7 @@
                 <div class="container">
                     <div class="site-footer-two__bottom-inner">
                         <p class="site-footer-two__bottom-text">© Copyright 2026 by <a
-                                href="javascript:void(0);">CarNation Elite Auto
-                                Repair & Sales</a> All Rights
+                                href="javascript:void(0);">CarNation Elite</a> All Rights
                             Reserved.</p>
                     </div>
                 </div>
@@ -1738,7 +1662,7 @@
                 </li>
                 <li>
                     <i class="fas fa-phone"></i>
-                    <a href="tel:+12145974922">+1 (214) 597-4922</a>
+                    <a href="tel:+12145974922">(214) 597-4922</a>
                 </li>
             </ul>
             <div class="mobile-nav__top">
@@ -1785,7 +1709,7 @@
         </div>
         <div class="ai-chatbot-messages">
             <div class="ai-message bot">
-                Hello! Welcome to CarNation Elite Auto Repair & Sales. How can I help you today?
+                Hello! Welcome to CarNation Elite. How can I help you today?
             </div>
         </div>
         <div class="ai-chatbot-input-area">

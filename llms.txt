@@ -1,12 +1,12 @@
-# CarNation Elite Auto Repair & Sales
+# CarNation Elite
 > Top-rated, affordable, and reliable auto repair in Dallas, TX. ASE-certified technicians, same-day service, and honest pricing for every vehicle.
 
 CarNation Elite is a family-owned auto repair shop located at 13610 Floyd Circle, Dallas, TX 75243 — near Interstate 635 (LBJ Freeway) in northeast Dallas. We serve Dallas drivers and surrounding communities with expert vehicle repair, maintenance, diagnostics, used car sales, and 24/7 roadside assistance. With 10–15 years of certified technician experience, we provide dealership-quality repairs at honest, competitive prices.
 
 ## Business Information
 
-- **Legal Name:** CarNation Elite Auto Repair & Sales
-- **Phone:** +1 (214) 597-4922
+- **Business Name:** CarNation Elite
+- **Phone:** (214) 597-4922
 - **Email:** info@carnationelite.com
 - **Address:** 13610 Floyd Circle, Dallas, TX 75243
 - **Coordinates:** 32.9029° N, 96.7044° W
@@ -105,7 +105,7 @@ A: Yes — domestic, foreign, luxury, and fleet vehicles. All makes and models i
 A: Yes. 24/7 emergency roadside assistance covers all of Dallas, Richardson, Plano, Garland, Mesquite, and surrounding DFW areas.
 
 **Q: How do I book an appointment?**
-A: Call +1 (214) 597-4922 or book online at https://calendly.com/carnationelite/schedule-your-appointment
+A: Call (214) 597-4922 or book online at https://calendly.com/carnationelite/schedule-your-appointment
 
 **Q: Is CarNation Elite family-owned?**
 A: Yes — CarNation Elite is a family-owned and operated business, not a franchise or chain.
