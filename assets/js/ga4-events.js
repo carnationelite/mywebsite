@@ -6,6 +6,7 @@
  * Events (GA4 names)          Parameters
  *   phone_click               link_url, click_location, page_location
  *   email_click               click_location, page_location
+ *   sms_click                 link_url, click_location, page_location   (message body never sent)
  *   booking_click             click_location, page_location, service_name (service pages only)
  *   calendly_event_scheduled  page_location, service_name
  *   directions_click          link_url, page_location
@@ -123,6 +124,11 @@
     if (/^tel:/i.test(href)) {
       send('phone_click', { link_url: href.split('?')[0], click_location: where }, href + '|' + where, true);
       carInquiry(el, 'phone');
+      return;
+    }
+    if (/^sms:/i.test(href)) {
+      var smsTo = href.split(/[?&;]/)[0];   // keep only sms:+1..., drop any prefilled body
+      send('sms_click', { link_url: smsTo, click_location: where }, smsTo + '|' + where, true);
       return;
     }
     if (/^mailto:/i.test(href)) {
