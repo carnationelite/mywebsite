@@ -194,7 +194,9 @@ BLOG_TITLES = {
     "common-honda-problems.html": "Common Honda Problems We See in Dallas",
     "common-ford-problems.html": "Common Ford Problems We See in Dallas",
     "common-chevy-problems.html": "Common Chevy Problems We See in Dallas",
-    "common-porsche-problems.html": "Common Porsche Problems We See in Dallas"
+    "common-porsche-problems.html": "Common Porsche Problems We See in Dallas",
+    "car-shaking-at-idle-but-smooth-while-driving.html": "Car Shaking at Idle but Smooth While Driving: What Causes It?",
+    "car-shaking-when-accelerating-dallas.html": "Car Shaking When Accelerating? 10 Causes Dallas Drivers Should Know"
 }
 
 RELATED_POSTS = {
@@ -205,7 +207,9 @@ RELATED_POSTS = {
     "engine-diagnostics-repair-dallas.html": [
         "what-does-a-car-diagnostic-test-check.html",
         "check-engine-light-causes.html",
-        "check-engine-light-repair-cost.html"
+        "check-engine-light-repair-cost.html",
+        "car-shaking-at-idle-but-smooth-while-driving.html",
+        "car-shaking-when-accelerating-dallas.html"
     ],
     "ac-heat-repair-dallas.html": [
         "car-ac-blowing-hot-air.html",
