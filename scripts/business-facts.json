@@ -23,7 +23,6 @@
     "Rico",
     "Sam"
   ],
-  "rating_policy": "Do not show a star rating or review count in blog posts until the owner confirms one figure (homepage schema says 4.8/113; older copy says 4.9/114).",
   "banned_claims": [
     {
       "pattern": "\\bASE[- ]certified\\b|\\bASE\\b",
@@ -48,6 +47,18 @@
     {
       "pattern": "(?i)mobile (ECM|PCM|module) programming",
       "why": "Mobile module programming is not offered yet"
+    },
+    {
+      "pattern": "(?<![\\$\\d])4\\.9\\s*(★|&#9733;|stars?|on Google|Google|out of 5)",
+      "why": "Google rating is 4.8 (113 reviews)"
+    },
+    {
+      "pattern": "(?<![\\d.$])114\\s*(Google\\s*)?reviews",
+      "why": "Review count is 113"
+    },
+    {
+      "pattern": "1[01]0\\+\\s*(Verified\\s*|Google\\s*)?[Rr]eviews",
+      "why": "Use the exact count: 113 Google reviews"
     }
   ],
   "placeholder_patterns": [
@@ -64,5 +75,12 @@
     "/assets/js/ga4-events.js"
   ],
   "mobile_nav_script": "/assets/js/site-nav.js",
-  "_patterns_note": "Patterns are Python regular expressions; (?i) means case-insensitive."
+  "_patterns_note": "Patterns are Python regular expressions; (?i) means case-insensitive.",
+  "google_rating": {
+    "value": "4.8",
+    "count": "113",
+    "display": "4.8★ on Google (113 reviews)",
+    "note": "Owner-approved Nov 25 2026. Keep schema AggregateRating and visible text in step."
+  },
+  "diagnostic_note": "Vibration complaints: the shop listens to the problem first, then quotes the diagnosis."
 }

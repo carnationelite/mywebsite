@@ -145,8 +145,11 @@ def check(path, all_pages_meta, publish_date, today):
     for b in FACTS['banned_claims']:
         m = re.search(b['pattern'], scan)
         if m: errs.append(f'Banned claim "{m.group(0)}": {b["why"]}')
-    if re.search(r'ratingValue|reviewCount', ' '.join(p.jsonld)) and rel.startswith('blog/'):
-        warns.append('Rating/review markup in a blog post: ' + FACTS['rating_policy'])
+    gr = FACTS.get('google_rating', {})
+    for m in re.finditer(r'"ratingValue"\s*:\s*"?([\d.]+)', ' '.join(p.jsonld)):
+        if gr and m.group(1) != gr['value']: errs.append(f'Schema ratingValue {m.group(1)} != approved {gr["value"]}')
+    for m in re.finditer(r'"reviewCount"\s*:\s*"?(\d+)', ' '.join(p.jsonld)):
+        if gr and m.group(1) != gr['count']: errs.append(f'Schema reviewCount {m.group(1)} != approved {gr["count"]}')
 
     # 3. JSON-LD
     graph = []
