@@ -1,0 +1,68 @@
+{
+  "_about": "Approved CarNation Elite business facts. The pre-publish check (scripts/prepublish-check.py) compares pages against this file. Change a fact here first, then on the pages. Owner-approved values only.",
+  "_last_reviewed": "2026-11-25",
+  "name": "CarNation Elite",
+  "phone_e164": "+12145974922",
+  "phone_display": "+1 (214) 597-4922",
+  "phone_schema": "+1-214-597-4922",
+  "sms_enabled": true,
+  "email": "service@carnationelite.com",
+  "address": {
+    "street": "13610 Floyd Circle",
+    "city": "Dallas",
+    "region": "TX",
+    "postal": "75243"
+  },
+  "hours": "Mon–Sat 9am–6pm",
+  "booking_url": "https://calendly.com/carnationelite/schedule-your-appointment",
+  "diagnostic_price": "$120",
+  "diagnostic_price_online": "$89",
+  "warranty": "12-month / 12,000-mile parts and labor",
+  "roadside": "24/7",
+  "authors": [
+    "Rico",
+    "Sam"
+  ],
+  "rating_policy": "Do not show a star rating or review count in blog posts until the owner confirms one figure (homepage schema says 4.8/113; older copy says 4.9/114).",
+  "banned_claims": [
+    {
+      "pattern": "\\bASE[- ]certified\\b|\\bASE\\b",
+      "why": "Technicians are not ASE-certified (owner, Nov 2026)"
+    },
+    {
+      "pattern": "(?i)15\\+\\s*years",
+      "why": "Conflicts with foundingDate 2024; owner must confirm years in business"
+    },
+    {
+      "pattern": "(?i)\\$125\\s*(flat\\s*)?(engine\\s*)?diagnos",
+      "why": "Diagnostic price is $120, or $89 booked online"
+    },
+    {
+      "pattern": "(?i)\\$125\\s*diagnostic",
+      "why": "Diagnostic price is $120, or $89 booked online"
+    },
+    {
+      "pattern": "(?i)fuel delivery",
+      "why": "Owner says fuel delivery is not offered (roadside page still lists it)"
+    },
+    {
+      "pattern": "(?i)mobile (ECM|PCM|module) programming",
+      "why": "Mobile module programming is not offered yet"
+    }
+  ],
+  "placeholder_patterns": [
+    "(?i)PHOTO SLOT",
+    "(?i)\\bTODO\\b",
+    "(?i)\\bTBD\\b",
+    "(?i)lorem ipsum",
+    "(?i)PLACEHOLDER",
+    "\\[(Year|Make|Model|\\$)[^\\]]*\\]",
+    "(?i)\\(draft\\)"
+  ],
+  "required_scripts": [
+    "/assets/js/analytics.js",
+    "/assets/js/ga4-events.js"
+  ],
+  "mobile_nav_script": "/assets/js/site-nav.js",
+  "_patterns_note": "Patterns are Python regular expressions; (?i) means case-insensitive."
+}
