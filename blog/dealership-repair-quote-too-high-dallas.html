@@ -3,6 +3,7 @@
 <head>
     <script src="/assets/js/analytics.js"></script>
     <script src="/assets/js/ga4-events.js" defer></script>
+    <script src="/assets/js/site-nav.js" defer></script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Dealership Repair Quote Too High? Second Opinion in Dallas</title>
@@ -383,7 +384,7 @@
             <div class="main-menu-two__wrapper-inner">
                 <div class="main-menu-two__left">
                     <div class="main-menu-two__logo">
-                        <a href="/"><img src="../assets/images/resources/logo-2.png" alt="CarNation Elite logo" style="height:80px;width:80px;object-fit:contain;" loading="eager"></a>
+                        <a href="/"><img src="../assets/images/resources/logo-2.png" alt="CarNation Elite logo" width="80" height="80" style="height:80px;width:80px;object-fit:contain;" loading="eager"></a>
                     </div>
                 </div>
                 <div class="main-menu-two__main-menu-box">
@@ -721,7 +722,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="footer-widget-two__column footer-widget-two__about">
                         <div class="footer-widget-two__logo">
-                            <a href="/"><img src="../assets/images/resources/logo-2.png" alt="CarNation Elite logo" style="height:80px;width:80px;object-fit:contain;" loading="lazy"></a>
+                            <a href="/"><img src="../assets/images/resources/logo-2.png" alt="CarNation Elite logo" width="80" height="80" style="height:80px;width:80px;object-fit:contain;" loading="lazy"></a>
                         </div>
                         <p class="footer-widget-two__about-text">CarNation Elite — Dallas, TX. Expert auto repair, 24/7 roadside assistance, fleet services, and quality used cars. Serving North Dallas, Richardson, Plano, and Addison.</p>
                         <div class="site-footer-two__social">
@@ -780,23 +781,5 @@
     </div>
 </footer>
 </div>
-<script>
-(function () {
-  'use strict';
-  var btn = document.getElementById('ce-menu-toggle');
-  var menu = document.getElementById('ce-mobile-menu');
-  if (!btn || !menu) return;
-  function setOpen(open) {
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menu.hidden = !open;
-  }
-  btn.addEventListener('click', function () { setOpen(btn.getAttribute('aria-expanded') !== 'true'); });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
-  });
-  window.addEventListener('resize', function () { if (window.innerWidth >= 1200) setOpen(false); });
-})();
-</script>
 </body>
 </html>
