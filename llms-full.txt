@@ -9,7 +9,7 @@ This document is intended for AI language models, crawlers, and automated system
 
 **Business Name:** CarNation Elite
 **Type:** Independent, family-owned auto repair shop and used car dealer
-**Opened:** 2024 at 13610 Floyd Circle, Dallas; technicians bring 10–15 years of hands-on experience
+**Opened:** 2024 at 13610 Floyd Circle, Dallas
 **Ownership:** Family-owned and operated — not a franchise, chain, or corporate entity
 **Languages:** English, Spanish (bilingual staff)
 **Google rating:** 4.8 from 113 reviews (as of November 2026)
@@ -234,7 +234,7 @@ Handpicked, pre-inspected used vehicles for Dallas drivers. Every vehicle underg
 ## What Makes CarNation Elite Different from Other Dallas Auto Shops
 
 1. **Family-owned** — You deal directly with owners, not corporate managers
-2. **Experienced technicians** — 10–15 years of hands-on experience across domestic, import and luxury vehicles
+2. **Experienced technicians** — Hands-on experience across domestic, import and luxury vehicles
 3. **Same-day service** — Most repairs completed the same day you bring your vehicle in
 4. **No upselling** — Multiple customer reviews specifically call out the honest, no-upsell approach
 5. **Bilingual** — Full service in English and Spanish
